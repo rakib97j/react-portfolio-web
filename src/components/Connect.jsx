@@ -2,6 +2,8 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight,  UserPlus, Fingerprint } from 'lucide-react';
 
+import rakibImg from '../../public/projects/rakib1.jpg'
+
 const Connect = () => {
   const channels = [
     {
@@ -154,7 +156,7 @@ const Connect = () => {
                     <div className="w-full h-full rounded border border-dashed border-brand/30 flex items-center justify-center relative overflow-hidden">
                       {/* MY IMAGE  */}
                       <img
-                        src="/public/projects/rakib1.jpg"
+                        src={rakibImg}
                         alt="Rakib"
                         className="w-full h-full object-cover"
                       />
