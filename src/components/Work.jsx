@@ -94,7 +94,7 @@ const Work = () => {
       description:
         "A modern landing page concept for a tech-focused brand, built with semantic HTML and pure CSS. Focused on clean typography, layout craft, and a responsive, distraction-free experience.",
       tags: ["HTML", "CSS"],
-      image: "/public/projects/twimg.png",
+      image: "/public/projects/jat.png",
       links: {
         source: "https://github.com/rakib97j/TechWave",
         live: "https://rakib97j.github.io/TechWave/",
