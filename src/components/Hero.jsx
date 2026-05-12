@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Download, ArrowUpRight } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
@@ -49,7 +49,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-[80px] md:text-[140px] lg:text-[170px] font-black lg:leading-[0.88] tracking-[-0.04em] text-slate-900 dark:text-white relative"
+              className="text-[50px] md:text-[120px] lg:text-[150px] font-black lg:leading-[0.88] tracking-[-0.04em] text-slate-900 dark:text-white relative"
             >
               Rakib<br />
               <span className="relative">
@@ -64,17 +64,23 @@ const Hero = () => {
               className="mt-16 max-w-2xl"
             >
               <div className="text-brand font-mono text-xs mb-6 tracking-widest uppercase flex items-center gap-3">
-                <span className="text-muted opacity-30">{'>'}</span> ROLE::FRONTEND_&_MERN_STACK_DEVELOPER_
+                <span className="text-muted opacity-30">{'>'}</span> 
+                ROLE::FRONTEND_&_MERN_STACK_DEVELOPER
+                <motion.span 
+                  animate={{ opacity: [1, 0, 1] }}
+                  transition={{ duration: 1, repeat: Infinity, ease: "steps(1)" }}
+                  className="text-brand"
+                >_</motion.span>
               </div>
               <p className="text-xl md:text-2xl text-muted leading-relaxed font-medium">
-                I am a passionate web developer — building scalable, accessible, and visually polished web apps with React and Node.js.
+                I am a passionate web developer — building scalable, accessible, and visually polished web apps with React and Next.js.
               </p>
               
               <div className="flex flex-wrap gap-4 mt-12 mb-6">
                 <a href="#work" className="px-10 py-5 border border-brand text-brand font-bold text-xs tracking-[0.2em] hover:bg-brand/10 transition-all flex items-center gap-4 uppercase group">
                   INITIATE SHOWCASE <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </a>
-                <a href="/resume.pdf" className="px-10 py-5 border border-black/10 dark:border-white/10 text-slate-900 dark:text-white font-bold text-xs tracking-[0.2em] hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center gap-4 uppercase group">
+                <a href="/public/CV/resume.pdf" target='_blank' className="px-10 py-5 border border-black/10 dark:border-white/10 text-slate-900 dark:text-white font-bold text-xs tracking-[0.2em] hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center gap-4 uppercase group">
                   <Download className="w-4 h-4 text-muted group-hover:text-slate-900 dark:group-hover:text-white transition-colors" /> DOWNLOAD CV
                 </a>
               </div>
@@ -103,7 +109,7 @@ const Hero = () => {
                 </div>
                 <div className="flex justify-between border-b border-black/5 dark:border-white/5 pb-1.5">
                   <span className="text-muted opacity-50 lowercase">location</span>
-                  <span className="text-slate-900 dark:text-white uppercase truncate ml-4">GAZIPUR, DHAKA</span>
+                  <span className="text-slate-900 dark:text-white uppercase truncate ml-4">GAZIPUR, DHAKA , BANGLADESH</span>
                 </div>
                 <div className="flex justify-between border-b border-black/5 dark:border-white/5 pb-1.5">
                   <span className="text-muted opacity-50 lowercase">mode</span>
@@ -118,11 +124,11 @@ const Hero = () => {
               <div className="mt-10 flex gap-8">
                 <div>
                   <div className="text-2xl font-black text-slate-900 dark:text-white">01+</div>
-                  <div className="text-[8px] text-muted mt-0.5 uppercase tracking-tighter">Exp_Year</div>
+                  <div className="text-[12px] text-muted mt-0.5 uppercase tracking-tighter">Exp_Year</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-black text-slate-900 dark:text-white">30+</div>
-                  <div className="text-[8px] text-muted mt-0.5 uppercase tracking-tighter">Shipped</div>
+                  <div className="text-2xl font-black text-slate-900 dark:text-white">15+</div>
+                  <div className="text-[12px] text-muted mt-0.5 uppercase tracking-tighter">PROJECT WORK</div>
                 </div>
               </div>
 

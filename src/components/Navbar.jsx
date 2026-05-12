@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Terminal, Sun, Moon } from 'lucide-react';
+import  { useState, useEffect } from 'react';
+import {  Sun, Moon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const Navbar = () => {
@@ -37,31 +37,33 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-      scrolled 
-      ? 'bg-white/95 dark:bg-black/95 backdrop-blur-xl py-3 border-b border-black/5 dark:border-white/5' 
-      : 'bg-transparent py-8'
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b border-black/5 dark:border-white/5 bg-white/30 dark:bg-black/30 backdrop-blur-3xl ${
+        scrolled ? "py-3" : "py-6"
+      }`}
+    >
       <div className="max-w-[1800px] mx-auto px-8 flex justify-between items-center">
         <a href="#index" className="flex items-center gap-4 group">
           <div className="w-10 h-10 rounded-sm border border-brand/30 flex items-center justify-center bg-brand/10 group-hover:bg-brand/20 transition-all duration-300">
-            <i className="fas fa-terminal text-brand text-lg"></i>
+            <a href="/index.html">
+              <img src="/public/projects/fav1.png" alt="Logo" />
+            </a>
           </div>
           <span className="text-slate-900 dark:text-white font-black text-2xl tracking-tighter uppercase">
             RAKIB<span className="text-brand">.</span>DEV
           </span>
         </a>
-        
+
         {/* Centered Nav Links */}
         <div className="hidden lg:flex items-center gap-8 bg-black/5 dark:bg-white/5 px-8 py-3 rounded-full border border-black/5 dark:border-white/5 backdrop-blur-md">
           {navItems.map((item) => (
-            <a 
+            <a
               key={item.id}
-              href={item.href} 
+              href={item.href}
               className={`relative py-1 font-mono text-[10px] font-bold tracking-widest transition-all duration-300 ${
-                activeSection === item.id 
-                ? 'text-brand' 
-                : 'text-slate-500 dark:text-muted hover:text-slate-900 dark:hover:text-white'
+                activeSection === item.id
+                  ? "text-brand"
+                  : "text-slate-500 dark:text-muted hover:text-slate-900 dark:hover:text-white"
               }`}
             >
               {item.label}
@@ -74,18 +76,22 @@ const Navbar = () => {
 
         {/* Right Actions */}
         <div className="flex items-center gap-6">
-          <button 
+          <button
             onClick={toggleTheme}
             className="p-2.5 rounded-full border border-black/10 dark:border-white/10 hover:border-brand/50 bg-black/5 dark:bg-white/5 transition-all duration-300 group"
           >
-            {theme === 'dark' ? (
+            {theme === "dark" ? (
               <Sun className="w-4 h-4 text-brand group-hover:rotate-90 transition-transform duration-500" />
             ) : (
               <Moon className="w-4 h-4 text-brand group-hover:-rotate-12 transition-transform duration-500" />
             )}
           </button>
 
-          <a href="/resume.pdf" className="hidden md:flex items-center gap-3 px-6 py-2.5 border border-brand/40 text-brand font-mono text-[10px] font-bold tracking-widest hover:bg-brand/10 transition-all rounded-sm relative group overflow-hidden">
+          <a
+            href="/public/CV/resume.pdf"
+            target='_blank'
+            className="hidden md:flex items-center gap-3 px-6 py-2.5 border border-brand/40 text-brand font-mono text-[10px] font-bold tracking-widest hover:bg-brand/10 transition-all rounded-sm relative group overflow-hidden"
+          >
             <div className="absolute inset-0 bg-brand/5 -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
             <div className="w-1.5 h-1.5 rounded-full bg-brand animate-pulse"></div>
             RESUME.PDF

@@ -1,11 +1,11 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
-import { Code2, Cpu, Coffee, Sparkles, Terminal } from 'lucide-react';
+import { Code2, Cpu, Coffee,  } from 'lucide-react';
 
 const About = () => {
   const metrics = [
-    { label: 'PROJECTS SHIPPED', value: '4+', icon: Code2 },
-    { label: 'YEARS BUILDING', value: '2+', icon: Cpu },
+    { label: 'PROJECT WORK', value: '15+', icon: Code2 },
+    { label: 'YEARS BUILDING', value: '1+', icon: Cpu },
     { label: 'COFFEE PER SHIP', value: '∞', icon: Coffee },
   ];
 
@@ -18,35 +18,43 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-32 px-6 border-t border-black/5 dark:border-white/5 relative overflow-hidden transition-colors duration-500">
+    <section
+      id="about"
+      className="py-32 px-6 border-t border-black/5 dark:border-white/5 relative overflow-hidden transition-colors duration-500"
+    >
       {/* Background glow */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-brand/5 blur-[120px] rounded-full -z-10"></div>
-      
+
       <div className="max-w-7xl mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           className="flex items-center gap-4 mb-16"
         >
-          <span className="font-mono text-[10px] text-brand tracking-widest">01</span>
+          <span className="font-mono text-[10px] text-brand tracking-widest">
+            01
+          </span>
           <div className="h-[1px] w-12 bg-brand/30"></div>
-          <span className="font-mono text-[10px] text-muted tracking-widest uppercase">ABOUT / IDENTITY</span>
+          <span className="font-mono text-[10px] text-muted tracking-widest uppercase">
+            ABOUT / IDENTITY
+          </span>
         </motion.div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           {/* Left Content */}
           <div className="lg:col-span-7">
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="text-5xl md:text-7xl font-bold mb-10 leading-[1.0] tracking-tighter text-slate-900 dark:text-white"
             >
-              Engineering interfaces that feel <span className="text-brand dark:text-glow italic">alive.</span>
+              Engineering interfaces that feel{" "}
+              <span className="text-brand dark:text-glow italic">alive.</span>
             </motion.h2>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -54,14 +62,23 @@ const About = () => {
               className="space-y-8 text-muted text-lg leading-relaxed max-w-2xl font-medium"
             >
               <p>
-                MERN Stack Developer focused on Building Scalable Web Apps with React & Node.js. Frontend Specialist and JavaScript enthusiast — currently pursuing a Diploma in Computer Science at Barguna Polytechnic Institute. I love turning ideas into clean, fast, and accessible interfaces, and I am actively building real-world projects while looking for an internship opportunity to grow with a great team.
+                MERN Stack Developer focused on Building Scalable Web Apps with
+                React & Next.js. Frontend Specialist and JavaScript enthusiast —
+                currently pursuing a Diploma in Computer Science at Barguna
+                Polytechnic Institute. I love turning ideas into clean, fast,
+                and accessible interfaces, and I am actively building real-world
+                projects while looking for an internship opportunity to grow
+                with a great team.
               </p>
               <p className="text-base text-muted/80 leading-relaxed">
-                I treat the browser as a workstation: every keystroke, every transition, every millisecond of latency is a design decision. My favourite projects sit at the intersection of clean systems thinking and unapologetically distinctive UI.
+                I treat the browser as a workstation: every keystroke, every
+                transition, every millisecond of latency is a design decision.
+                My favourite projects sit at the intersection of clean systems
+                thinking and unapologetically distinctive UI.
               </p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -69,8 +86,8 @@ const About = () => {
               className="flex flex-wrap gap-2 mt-16"
             >
               {tags.map((tag) => (
-                <span 
-                  key={tag} 
+                <span
+                  key={tag}
                   className="px-4 py-2 bg-slate-50 dark:bg-white/5 border border-black/5 dark:border-white/5 text-[9px] font-mono text-muted tracking-widest uppercase hover:bg-brand hover:text-black hover:border-brand hover:shadow-[0_0_15px_rgba(0,255,0,0.4)] transition-all duration-300 cursor-default"
                 >
                   {tag}
@@ -81,27 +98,36 @@ const About = () => {
 
           {/* Right Metrics Card - Re-designed to match image */}
           <div className="lg:col-span-5">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="bg-slate-50 dark:bg-[#0A0A0A]/50 border border-black/5 dark:border-white/10 p-10 relative overflow-hidden backdrop-blur-xl"
             >
               <div className="flex justify-between items-center mb-12">
-                <div className="font-mono text-[10px] text-muted tracking-widest uppercase">./ABOUT.METRICS</div>
+                <div className="font-mono text-[10px] text-muted tracking-widest uppercase">
+                  ./ABOUT.METRICS
+                </div>
                 <div className="w-2 h-2 rounded-full bg-brand animate-pulse shadow-[0_0_8px_#00FF00]"></div>
               </div>
 
               <div className="space-y-10">
                 {metrics.map((m, i) => (
-                  <div key={i} className="group border-b border-black/5 dark:border-white/5 pb-8">
+                  <div
+                    key={i}
+                    className="group border-b border-black/5 dark:border-white/5 pb-8"
+                  >
                     <div className="flex items-center gap-6">
                       <div className="w-12 h-12 border border-black/10 dark:border-brand/30 flex items-center justify-center bg-black/5 dark:bg-brand/5 group-hover:bg-brand/10 transition-all duration-300">
                         <m.icon className="w-5 h-5 text-brand" />
                       </div>
                       <div className="flex-1">
-                        <div className="font-mono text-[9px] text-muted tracking-widest uppercase mb-1">{m.label}</div>
-                        <div className="text-3xl font-black text-slate-900 dark:text-white leading-none tracking-tight">{m.value}</div>
+                        <div className="font-mono text-[9px] text-muted tracking-widest uppercase mb-1">
+                          {m.label}
+                        </div>
+                        <div className="text-3xl font-black text-slate-900 dark:text-white leading-none tracking-tight">
+                          {m.value}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -110,9 +136,12 @@ const About = () => {
 
               {/* Currently Section from image */}
               <div className="mt-12 pt-10 border-t border-black/5 dark:border-white/5">
-                <div className="font-mono text-[9px] text-muted tracking-widest uppercase mb-4">Currently</div>
+                <div className="font-mono text-[9px] text-muted tracking-widest uppercase mb-4">
+                  Currently
+                </div>
                 <p className="text-sm text-slate-900 dark:text-white leading-relaxed font-medium">
-                  Designing distinctive product surfaces — and reading too much about CRDTs.
+                  "Crafting seamless user experiences with the MERN stack — and
+                  obsessing over pixel-perfect UI designs."
                 </p>
               </div>
 

@@ -1,80 +1,97 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { GraduationCap, Briefcase, MapPin, Calendar } from 'lucide-react';
 
 const Path = () => {
   const milestones = [
     {
-      type: 'EXPERIENCE',
+      type: "EXPERIENCE",
       icon: Briefcase,
-      title: 'Open to Internship',
-      institution: 'Looking for opportunities',
-      location: 'Remote / Hybrid / On-site',
-      date: 'PRESENT',
-      description: 'Currently a student building this portfolio and shipping side projects — actively seeking a frontend or MERN-stack internship where I can contribute, learn fast, and grow alongside a great team.',
-      tags: ['React', 'Node.js', 'Tailwind']
+      title: "Open to Internship",
+      institution: "Looking for opportunities",
+      location: "Remote / Hybrid / On-site",
+      date: "PRESENT",
+      description:
+        "Currently a student building this portfolio and shipping side projects — actively seeking a frontend or MERN-stack internship where I can contribute, learn fast, and grow alongside a great team.",
+      tags: [
+        "React",
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "Tailwind",
+        "JavaScript",
+      ],
     },
     {
-      type: 'EDUCATION',
+      type: "EDUCATION",
       icon: GraduationCap,
-      title: 'Diploma in Computer Science',
-      institution: 'Barguna Polytechnic Institute',
-      location: 'Barguna, Barguna',
-      date: '2023 - RUNNING',
-      description: 'Currently pursuing a Diploma in Computer Science with a strong focus on web development, programming fundamentals, databases, and full-stack engineering. Building real-world projects alongside coursework.',
-      tags: ['Web Dev', 'Programming', 'Databases']
+      title: "Diploma in Computer Science",
+      institution: "Barguna Polytechnic Institute",
+      location: "Barguna, Barguna",
+      date: "2023 - RUNNING",
+      description:
+        "Currently pursuing a Diploma in Computer Science with a strong focus on web development, programming fundamentals, databases, and full-stack engineering. Building real-world projects alongside coursework.",
+      tags: ["Web Dev", "Programming", "Databases"],
     },
     {
-      type: 'EDUCATION',
+      type: "EDUCATION",
       icon: GraduationCap,
-      title: 'SSC — Business Studies',
-      institution: 'Global Public School',
-      location: 'Gazipur, Dhaka',
-      date: '2022',
-      description: 'Completed the Secondary School Certificate in Business Studies, building a foundation in analytical thinking, accounting basics, and disciplined study habits that carry into engineering work.',
-      tags: ['Business Studies', 'Foundation']
+      title: "SSC — Business Studies",
+      institution: "Global Public School",
+      location: "Gazipur, Dhaka",
+      date: "2022",
+      description:
+        "Completed the Secondary School Certificate in Business Studies, building a foundation in analytical thinking, accounting basics, and disciplined study habits that carry into engineering work.",
+      tags: ["Business Studies", "Foundation"],
     },
     {
-      type: 'EDUCATION',
+      type: "EDUCATION",
       icon: GraduationCap,
-      title: 'JSC',
-      institution: 'Global Public School',
-      location: 'Gazipur, Dhaka',
-      date: '2019',
-      description: 'Completed the Junior School Certificate, where I first discovered my interest in computers, the Internet, and how websites are built — the spark that started my web development journey.',
-      tags: ['Foundation']
-    }
+      title: "JSC",
+      institution: "Global Public School",
+      location: "Gazipur, Dhaka",
+      date: "2019",
+      description:
+        "Completed the Junior School Certificate, where I first discovered my interest in computers, the Internet, and how websites are built — the spark that started my web development journey.",
+      tags: ["Foundation"],
+    },
   ];
 
   return (
-    <section id="path" className="py-32 px-6 bg-white dark:bg-black relative overflow-hidden transition-colors duration-500">
+    <section
+      id="path"
+      className="py-32 px-6 bg-white dark:bg-black relative overflow-hidden transition-colors duration-500"
+    >
       <div className="max-w-7xl mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           className="font-mono text-[10px] text-brand tracking-widest mb-16 uppercase"
         >
-          02 // PATH 
+          02 // PATH
         </motion.div>
 
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-24">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold max-w-xl leading-[1.1] text-slate-900 dark:text-white"
           >
-            A timeline of <span className="text-brand dark:text-glow">build</span> & learn.
+            A timeline of{" "}
+            <span className="text-brand dark:text-glow">build</span> & learn.
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             className="text-muted max-w-sm font-mono text-xs leading-loose"
           >
-            Every role and milestone has shaped a slightly more opinionated engineer. Below is the verified history of where I've been, what I've shipped, and what I learned along the way.
+            "Every project and milestone has shaped a more focused developer.
+            Below is the verified history of what I've shipped, the stacks I've
+            mastered, and what I've learned along the way."
           </motion.p>
         </div>
 
@@ -83,7 +100,7 @@ const Path = () => {
           <div className="absolute left-[7px] top-4 bottom-4 w-[1px] bg-black/5 dark:bg-white/10 hidden md:block"></div>
 
           {milestones.map((item, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -101,7 +118,9 @@ const Path = () => {
                     <div className="w-8 h-8 rounded bg-brand/10 border border-brand/20 flex items-center justify-center">
                       <item.icon className="w-4 h-4 text-brand" />
                     </div>
-                    <span className="font-mono text-[10px] text-muted tracking-widest uppercase">{item.type}</span>
+                    <span className="font-mono text-[10px] text-muted tracking-widest uppercase">
+                      {item.type}
+                    </span>
                   </div>
                   <div className="font-mono text-[10px] text-brand tracking-widest flex items-center gap-2">
                     <Calendar className="w-3 h-3" />
@@ -112,10 +131,12 @@ const Path = () => {
                 <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2 group-hover:text-brand transition-colors duration-300 text-slate-900 dark:text-white">
                   {item.title}
                 </h3>
-                
+
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-6 font-mono text-[10px] text-muted uppercase tracking-widest">
                   <div className="flex items-center gap-2">
-                    <span className="text-slate-900 dark:text-white uppercase">{item.institution}</span>
+                    <span className="text-slate-900 dark:text-white uppercase">
+                      {item.institution}
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-3 h-3" />
@@ -129,7 +150,10 @@ const Path = () => {
 
                 <div className="flex flex-wrap gap-2">
                   {item.tags.map((tag) => (
-                    <span key={tag} className="px-3 py-1 bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 text-[9px] font-mono text-muted tracking-widest group-hover:border-brand/20 transition-colors uppercase">
+                    <span
+                      key={tag}
+                      className="px-3 py-1 bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 text-[9px] font-mono text-muted tracking-widest group-hover:border-brand/20 transition-colors uppercase"
+                    >
                       {tag}
                     </span>
                   ))}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Stack = () => {
@@ -12,22 +12,41 @@ const Stack = () => {
 
   const stack = {
     languages: [
-      { name: 'JavaScript', level: 'ADVANCED', icon: 'fab fa-js' },
-      { name: 'PHP', level: 'INTERMEDIATE', icon: 'fab fa-php' },
-      { name: 'HTML', level: 'EXPERT', icon: 'fab fa-html5' },
-      { name: 'CSS', level: 'EXPERT', icon: 'fab fa-css3-alt' },
+      { name: "JavaScript", level: "ADVANCED", icon: "fab fa-js" },
+      { name: "PHP", level: "INTERMEDIATE", icon: "fab fa-php" },
+      { name: "HTML", level: "EXPERT", icon: "fab fa-html5" },
+      { name: "CSS", level: "EXPERT", icon: "fab fa-css3-alt" },
+      { name: "SQL", level: "EXPERT", icon: "fas fa-database" },
     ],
     frameworks: [
-      { name: 'React.js', level: 'ADVANCED', icon: 'fab fa-react' },
-      { name: 'Node.js', level: 'ADVANCED', icon: 'fab fa-node-js' },
-      { name: 'Express.js', level: 'ADVANCED', icon: 'fas fa-server' },
-      { name: 'Next.js', level: 'INTERMEDIATE', icon: 'fas fa-cube' },
+      { name: "MongoDB", level: "ADVANCED", icon: "fas fa-leaf" },
+      { name: "Express.js", level: "ADVANCED", icon: "fas fa-server" },
+      { name: "React.js", level: "ADVANCED", icon: "fab fa-react" },
+      { name: "Node.js", level: "ADVANCED", icon: "fab fa-node-js" },
+      { name: "Next.js", level: "ADVANCED", icon: "fas fa-cube" },
+      { name: 'Laravel', level: 'INTERMEDIATE', icon: 'fab fa-laravel' },
+      { name: "Tailwind CSS", level: "EXPERT", icon: "fas fa-wind" },
+
+      { name: "Bootstrap", level: "EXPERT", icon: "fab fa-bootstrap" },
     ],
     tools: [
-      { name: 'Git / GitHub', level: 'ADVANCED', icon: 'fab fa-github' },
-      { name: 'VS Code', level: 'EXPERT', icon: 'fas fa-laptop-code' },
-      { name: 'Tailwind CSS', level: 'EXPERT', icon: 'fas fa-wind' },
-      { name: 'Figma', level: 'INTERMEDIATE', icon: 'fab fa-figma' },
+      { name: "Git / GitHub", level: "ADVANCED", icon: "fab fa-github" },
+      { name: "Postman", level: "ADVANCED", icon: "fas fa-rocket" },
+      { name: "VS Code", level: "EXPERT", icon: "fas fa-laptop-code" },
+      { name: "Figma", level: "INTERMEDIATE", icon: "fab fa-figma" },
+      { name: "Firebase", level: "INTERMEDIATE", icon: "fas fa-fire" },
+      { name: "Netlify", level: "ADVANCED", icon: "fas fa-cloud-arrow-up" },
+      {
+        name: "Vercel",
+        level: "ADVANCED",
+        icon: "fas fa-triangle-exclamation",
+      },
+      { name: "Canva", level: "INTERMEDIATE", icon: "fas fa-palette" },
+      { name: "Font Awesome", level: "EXPERT", icon: "fab fa-font-awesome" },
+      { name: "Daisy UI", level: "EXPERT", icon: "fas fa-certificate" },
+      { name: "Google Fonts", level: "EXPERT", icon: "fas fa-font" },
+      { name: "NPM", level: "EXPERT", icon: "fab fa-npm" },
+      { name: "React Icons", level: "ADVANCED", icon: "fab fa-reacteurope" },
     ],
   };
 

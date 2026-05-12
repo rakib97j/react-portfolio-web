@@ -1,65 +1,102 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Code2, ArrowUpRight, Plus, Minus } from 'lucide-react';
+import { ExternalLink,  ArrowUpRight, Plus, Minus } from 'lucide-react';
+
 
 const Work = () => {
   const [showAll, setShowAll] = useState(false);
 
   const projects = [
     {
-      id: '01',
-      date: '2024',
-      title: 'Job Application Tracker',
-      description: 'A clean Job Application Tracker that helps you log, filter, and monitor your job applications with status updates and an intuitive Tailwind-based UI. Built with vanilla JavaScript and DOM manipulation.',
-      tags: ['JavaScript', 'DOM', 'HTML', 'Tailwind CSS'],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426',
-      links: { source: '#', live: '#' }
+      id: "01",
+      date: "2026",
+      title: "Digi Tool",
+      description:
+        "A modern, responsive marketplace for premium digital products  AI tools, design assets, templates, and productivity software, all in one place.",
+      tags: [
+        "React.js",
+        "JavaScript (ES6+)",
+        "React-Toastify (NPM Package)",
+        "Tailwind CSS + DaisyUI",
+      ],
+      image: "/projects/digitols.png",
+      links: {
+        source: "https://github.com/rakib97j/DigiTools",
+        live: "https://digitool-rakib97j.netlify.app/",
+      },
     },
     {
-      id: '02',
-      date: '2024',
-      title: 'GitHub Issues Tracker',
-      description: 'A live dashboard that fetches and visualizes GitHub issues for any public repository using the GitHub REST API. Includes search, filtering, and a clean responsive Tailwind UI.',
-      tags: ['JavaScript', 'REST API', 'DOM', 'Tailwind CSS', 'HTML'],
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2070',
-      links: { source: '#', live: '#' }
+      id: "02",
+      date: "2026",
+      title: "GitHub Issues Tracker",
+      description:
+        "A live dashboard that fetches and visualizes GitHub issues for any public repository using the GitHub REST API. Includes search, filtering, and a clean responsive Tailwind UI.",
+      tags: [
+        "JavaScript",
+        "JavaScript ES6",
+        "API",
+        "DOM",
+        "Tailwind CSS",
+        "HTML",
+      ],
+      image: "/projects/githubissue.png",
+      links: {
+        source: "https://github.com/rakib97j/GitHub-Issues-Tracker",
+        live: "https://rakib97j.github.io/GitHub-Issues-Tracker/",
+      },
     },
     {
-      id: '03',
-      date: '2024',
-      title: 'Knowledge Vault',
-      description: 'Knowledge Vault is a platform that helps users organize notes, links, and learning summaries in a structured way. The focus is on structured thinking — not just note-taking — so users can connect ideas and turn learning into long-term knowledge.',
-      tags: ['HTML', 'CSS'],
-      image: 'https://images.unsplash.com/photo-1454165833767-027ffea70250?auto=format&fit=crop&q=80&w=2070',
-      links: { source: '#', live: '#' }
+      id: "03",
+      date: "2026",
+      title: "Job Application Tracker",
+      description:
+        "The Job Application Tracker is a simple and user-friendly web application that helps users manage their job search process efficiently. It allows users to track the total number of job applications, interviews, and rejected applications in one place.",
+      tags: ["HTML", "JavaScript", "Tailwind"],
+      image: "/projects/JAT.png",
+      links: {
+        source: "https://github.com/rakib97j/Job-Application-Tracker",
+        live: "https://rakib97j.github.io/Job-Application-Tracker/",
+      },
     },
     {
-      id: '04',
-      date: '2024',
-      title: 'TechWave',
-      description: 'A modern landing page concept for a tech-focused brand, built with semantic HTML and pure CSS. Focused on clean typography, layout craft, and a responsive, distraction-free experience.',
-      tags: ['HTML', 'CSS'],
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2070',
-      links: { source: '#', live: '#' }
+      id: "04",
+      date: "2026",
+      title: "TechWave",
+      description:
+        "A modern landing page concept for a tech-focused brand, built with semantic HTML and pure CSS. Focused on clean typography, layout craft, and a responsive, distraction-free experience.",
+      tags: ["HTML", "CSS"],
+      image: "/projects/TechWave.png",
+      links: {
+        source: "https://github.com/rakib97j/TechWave",
+        live: "https://rakib97j.github.io/TechWave/",
+      },
     },
     {
-      id: '05',
-      date: '2023',
-      title: 'NexGen Dashboard',
-      description: 'An experimental administrative dashboard focusing on data density and real-time visualization. Built to explore advanced grid layouts and complex state management in smaller-scale tools.',
-      tags: ['React', 'Chart.js', 'Tailwind'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2070',
-      links: { source: '#', live: '#' }
+      id: "05",
+      date: "2026",
+      title: "Payoo",
+      description:
+        "Payoo is a secure and user-friendly personal mobile financial service interface. It features a clean login system and a responsive dashboard designed to simulate essential financial transactions like sending money, adding money, and managing a digital wallet with a focus on seamless user experience.",
+      tags: ["HTML", "Java Script", "Tailwind"],
+      image: "/projects/pay.png",
+      links: {
+        source: "https://github.com/rakib97j/parsonal-paymant-system",
+        live: "https://rakib97j.github.io/parsonal-paymant-system/",
+      },
     },
     {
-      id: '06',
-      date: '2023',
-      title: 'Cipher Chat',
-      description: 'A minimalist end-to-end encrypted chat interface concept. Focused on privacy-first UX, clean dark-mode transitions, and a distraction-free environment for secure communication.',
-      tags: ['WebSockets', 'React', 'CryptoJS'],
-      image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2070',
-      links: { source: '#', live: '#' }
-    }
+      id: "06",
+      date: "2026",
+      title: "First Portfolio",
+      description:
+        "After a dedicated journey of learning and building, I am thrilled to share my first personal portfolio website!",
+      tags: ["HTML", "Tailwind CSS"],
+      image: "/projects/HTportfoloi.png",
+      links: {
+        source: "https://github.com/rakib97j/portfolio-web",
+        live: "https://rakib97j.github.io/portfolio-web/",
+      },
+    },
   ];
 
   const displayedProjects = showAll ? projects : projects.slice(0, 4);
@@ -81,7 +118,7 @@ const Work = () => {
           viewport={{ once: true }}
           className="font-mono text-[10px] text-brand tracking-widest mb-16 uppercase"
         >
-          03 // WORK / SELECTED
+          03 // SELECTED / WORk
         </motion.div>
 
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-24">
@@ -100,7 +137,7 @@ const Work = () => {
             transition={{ delay: 0.2 }}
             className="text-muted max-w-sm font-mono text-[11px] leading-loose uppercase tracking-wider"
           >
-            A curated set of products I've designed, architected, and shipped. Each links to its source and a live deployment.
+           "A curated set of products I've designed, architected, and shipped. Each links to its source and a live deployment."
           </motion.p>
         </div>
 
