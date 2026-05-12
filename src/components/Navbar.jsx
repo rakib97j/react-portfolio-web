@@ -1,6 +1,7 @@
 import  { useState, useEffect } from 'react';
 import {  Sun, Moon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import logo from '../../public/projects/fav1.png'
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
@@ -46,7 +47,8 @@ const Navbar = () => {
         <a href="#index" className="flex items-center gap-4 group">
           <div className="w-10 h-10 rounded-sm border border-brand/30 flex items-center justify-center bg-brand/10 group-hover:bg-brand/20 transition-all duration-300">
             <a href="/index.html">
-              <img src="/public/projects/fav1.png" alt="Logo" />
+              {/* <img src="/public/projects/fav1.png" alt="Logo" /> */}
+              <img src={logo} alt="Logo" />
             </a>
           </div>
           <span className="text-slate-900 dark:text-white font-black text-2xl tracking-tighter uppercase">
