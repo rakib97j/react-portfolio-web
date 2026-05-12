@@ -58,19 +58,21 @@ const Work = () => {
         live: "https://rakib97j.github.io/Job-Application-Tracker/",
       },
     },
+
     {
       id: "04",
       date: "2026",
-      title: "TechWave",
+      title: "First Portfolio",
       description:
-        "A modern landing page concept for a tech-focused brand, built with semantic HTML and pure CSS. Focused on clean typography, layout craft, and a responsive, distraction-free experience.",
-      tags: ["HTML", "CSS"],
-      image: "/public/projects/digitols.png",
+        "After a dedicated journey of learning and building, I am thrilled to share my first personal portfolio website!",
+      tags: ["HTML", "Tailwind CSS"],
+      image: "/projects/HTportfoloi.png",
       links: {
-        source: "https://github.com/rakib97j/TechWave",
-        live: "https://rakib97j.github.io/TechWave/",
+        source: "https://github.com/rakib97j/portfolio-web",
+        live: "https://rakib97j.github.io/portfolio-web/",
       },
     },
+
     {
       id: "05",
       date: "2026",
@@ -84,17 +86,18 @@ const Work = () => {
         live: "https://rakib97j.github.io/parsonal-paymant-system/",
       },
     },
+
     {
-      id: "06",
+      id: "05",
       date: "2026",
-      title: "First Portfolio",
+      title: "TechWave",
       description:
-        "After a dedicated journey of learning and building, I am thrilled to share my first personal portfolio website!",
-      tags: ["HTML", "Tailwind CSS"],
-      image: "/projects/HTportfoloi.png",
+        "A modern landing page concept for a tech-focused brand, built with semantic HTML and pure CSS. Focused on clean typography, layout craft, and a responsive, distraction-free experience.",
+      tags: ["HTML", "CSS"],
+      image: "/public/projects/digitols.png",
       links: {
-        source: "https://github.com/rakib97j/portfolio-web",
-        live: "https://rakib97j.github.io/portfolio-web/",
+        source: "https://github.com/rakib97j/TechWave",
+        live: "https://rakib97j.github.io/TechWave/",
       },
     },
   ];
