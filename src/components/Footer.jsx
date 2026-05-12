@@ -1,5 +1,5 @@
 
-
+import logo from "../../public/projects/fav1.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -19,7 +19,8 @@ const Footer = () => {
             <div className="flex  gap-2">
               <div className="w-10 h-10 rounded-sm border border-brand/30 flex items-center justify-center bg-brand/10 group-hover:bg-brand/20 transition-all duration-300">
                 <a href="/index.html">
-                  <img src="/public/projects/fav1.png" alt="Logo" />
+                  
+                  <img src={logo} alt="Logo" />
                 </a>
               </div>
 
