@@ -81,10 +81,10 @@ const Connect = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-6xl md:text-[100px] font-black leading-[0.88] tracking-tighter mb-12 text-slate-900 dark:text-white uppercase"
+              className="text-5xl md:text-[100px] font-black leading-[0.88] tracking-tighter mb-12 text-slate-900 dark:text-white uppercase"
             >
               Let's build{" "}
-              <span className="text-brand dark:text-glow text-5xl md:text-[100px]">
+              <span className="text-brand   dark:text-glow text-4xl md:text-[100px]">
                 something
               </span>
               <br />
