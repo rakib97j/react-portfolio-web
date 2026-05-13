@@ -51,7 +51,7 @@ const Stack = () => {
   };
 
   return (
-    <section id="stack" className="py-32 px-6 bg-white dark:bg-black relative transition-colors duration-500">
+    <section id="stack" className="py-32 px-6 bg-main-bg relative transition-colors duration-500">
       <div className="max-w-7xl mx-auto">
         <motion.div 
           initial={{ opacity: 0 }}
@@ -85,12 +85,12 @@ const Stack = () => {
         </div>
 
         {/* Tab Navigation Pill */}
-        <div className="flex p-1 bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-sm mb-16 max-w-fit overflow-x-auto no-scrollbar">
+        <div className="grid grid-cols-1 md:grid-cols-3 p-1 bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-sm mb-16 w-full md:w-max">
           {categories.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActiveTab(cat.id)}
-              className={`flex items-center gap-3 px-8 py-3 font-mono text-[10px] font-bold tracking-widest transition-all duration-300 relative whitespace-nowrap ${
+              className={`flex items-center justify-center md:justify-start gap-3 px-8 py-3 font-mono text-[10px] font-bold tracking-widest transition-all duration-300 relative whitespace-nowrap ${
                 activeTab === cat.id 
                 ? 'text-brand' 
                 : 'text-muted hover:text-slate-900 dark:hover:text-white'

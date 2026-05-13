@@ -60,7 +60,7 @@ const Path = () => {
   return (
     <section
       id="path"
-      className="py-32 px-6 bg-white dark:bg-black relative overflow-hidden transition-colors duration-500"
+      className="py-32 px-6 bg-main-bg relative overflow-hidden transition-colors duration-500"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -109,7 +109,7 @@ const Path = () => {
               className="relative pl-0 md:pl-12 group"
             >
               {/* Glow Dot */}
-              <div className="absolute left-[-1px] md:left-[3px] top-10 w-3 h-3 rounded-full bg-brand shadow-[0_0_10px_#00FF00] z-10 scale-0 group-hover:scale-110 transition-transform duration-300"></div>
+              <div className="absolute left-[-1px] md:left-[3px] top-10 w-3 h-3 rounded-full bg-brand shadow-[0_0_10px_var(--brand-color)] z-10 scale-0 group-hover:scale-110 transition-transform duration-300"></div>
               <div className="absolute left-[3px] md:left-[7px] top-11 w-1 h-1 rounded-full bg-brand z-10 md:hidden"></div>
 
               <div className="bg-slate-50 dark:bg-surface/30 border border-black/5 dark:border-white/10 p-8 hover:border-brand/30 transition-all duration-500 backdrop-blur-sm">

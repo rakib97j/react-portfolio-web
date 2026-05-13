@@ -53,7 +53,7 @@ const Connect = () => {
   return (
     <section
       id="connect"
-      className="py-32 px-6 bg-white dark:bg-black relative transition-colors duration-500 overflow-hidden"
+      className="py-32 px-6 bg-main-bg relative transition-colors duration-500 overflow-hidden"
     >
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand/5 blur-[150px] rounded-full -z-10"></div>
@@ -109,7 +109,7 @@ const Connect = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center  gap-4 px-2 md:px-8 py-5 border border-brand text-brand font-mono text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-brand hover:text-black hover:shadow-[0_0_25px_#00FF00] transition-all duration-300 group"
+              className="inline-flex items-center  gap-4 px-2 md:px-8 py-5 border border-brand text-brand font-mono text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-brand hover:text-black hover:shadow-[0_0_25px_var(--brand-color)] transition-all duration-300 group"
             >
               <i className="far fa-envelope text-sm"></i>
               RAKIBULHASSANRAKIB559@GMAIL.COM

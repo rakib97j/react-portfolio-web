@@ -113,7 +113,7 @@ const Work = () => {
   );
 
   return (
-    <section id="work" className="py-32 px-6 bg-white dark:bg-black relative transition-colors duration-500">
+    <section id="work" className="py-32 px-6 bg-main-bg relative transition-colors duration-500">
       <div className="max-w-7xl mx-auto">
         <motion.div 
           initial={{ opacity: 0 }}

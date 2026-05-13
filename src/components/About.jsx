@@ -108,7 +108,7 @@ const About = () => {
                 <div className="font-mono text-[10px] text-muted tracking-widest uppercase">
                   ./ABOUT.METRICS
                 </div>
-                <div className="w-2 h-2 rounded-full bg-brand animate-pulse shadow-[0_0_8px_#00FF00]"></div>
+                <div className="w-2 h-2 rounded-full bg-brand animate-pulse shadow-[0_0_8px_var(--brand-color)]"></div>
               </div>
 
               <div className="space-y-10">

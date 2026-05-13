@@ -19,12 +19,11 @@ const Footer = () => {
             <div className="flex  gap-2">
               <div className="w-10 h-10 rounded-sm border border-brand/30 flex items-center justify-center bg-brand/10 group-hover:bg-brand/20 transition-all duration-300">
                 <a href="/index.html">
-                  
                   <img src={logo} alt="Logo" />
                 </a>
               </div>
 
-              <div className="text-slate-900 dark:text-white mt-1 font-mono font-black text-2xl mb-6 tracking-tighter uppercase">
+              <div className="text-slate-900  dark:text-white mt-1  font-mono font-black text-2xl mb-6 tracking-tighter uppercase">
                 RAKIB<span className="text-brand">.</span>DEV
               </div>
             </div>
@@ -50,7 +49,7 @@ const Footer = () => {
             </div>
 
             <div className="mt-12 flex items-center gap-3 font-mono text-[9px] text-muted tracking-widest">
-              <span className="w-2 mb-1 h-2 bg-brand animate-pulse shadow-[0_0_8px_#00FF00]"></span>
+              <span className="w-2 mb-1 h-2 bg-brand animate-pulse shadow-[0_0_8px_var(--brand-color)]"></span>
               SYSTEM STATUS:{" "}
               <span className="text-slate-900 dark:text-white">
                 OPERATIONAL
@@ -86,7 +85,7 @@ const Footer = () => {
             <ul className="space-y-4 font-mono text-[10px] font-bold">
               <li>
                 <a
-                target="_blank"
+                  target="_blank"
                   href="/public/CV/resume.pdf"
                   className="text-muted hover:text-brand transition-colors uppercase tracking-widest"
                 >

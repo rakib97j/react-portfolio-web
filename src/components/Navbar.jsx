@@ -39,17 +39,17 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b border-black/5 dark:border-white/5 bg-white/30 dark:bg-black/30 backdrop-blur-3xl ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b border-black/5 dark:border-white/5 bg-main-bg/30 dark:bg-black/30 backdrop-blur-3xl ${
         scrolled ? "py-3" : "py-6"
       }`}
     >
       <div className="max-w-[1800px] mx-auto px-8 flex justify-between items-center">
         <a href="#index" className="flex items-center gap-4 group">
           <div className="w-10 h-10 rounded-sm border border-brand/30 flex items-center justify-center bg-brand/10 group-hover:bg-brand/20 transition-all duration-300">
-            <a href="/index.html">
+            <p href="/index.html">
               {/* <img src="/public/projects/fav1.png" alt="Logo" /> */}
               <img src={logo} alt="Logo" />
-            </a>
+            </p>
           </div>
           <span className="text-slate-900 dark:text-white font-black text-2xl tracking-tighter uppercase">
             RAKIB<span className="text-brand">.</span>DEV
@@ -70,7 +70,7 @@ const Navbar = () => {
             >
               {item.label}
               {activeSection === item.id && (
-                <div className="absolute -bottom-1 left-0 w-full h-[2px] bg-brand shadow-[0_0_8px_#00FF00]"></div>
+                <div className="absolute -bottom-1 left-0 w-full h-[2px] bg-brand shadow-[0_0_8px_var(--brand-color)]"></div>
               )}
             </a>
           ))}

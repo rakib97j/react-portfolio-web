@@ -19,7 +19,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="index" className="relative min-h-screen pt-32 px-6 flex flex-col justify-center bg-white dark:bg-black overflow-hidden transition-colors duration-500">
+    <section id="index" className="relative min-h-screen pt-32 px-6 flex flex-col justify-center bg-main-bg overflow-hidden transition-colors duration-500">
       {/* 3D Perspective Grid */}
       <div className="grid-3d">
         <div className={`grid-3d-inner ${theme === 'light' ? 'opacity-20' : 'opacity-100'}`}></div>
@@ -53,7 +53,7 @@ const Hero = () => {
             >
               Rakib<br />
               <span className="relative">
-                Hassan<span className="inline-block w-8 h-8 lg:w-12 lg:h-12 bg-brand rounded-full ml-4 shadow-[0_0_20px_#00FF00]"></span>
+                Hassan<span className="inline-block w-8 h-8 lg:w-12 lg:h-12 bg-brand rounded-full ml-4 shadow-[0_0_20px_var(--brand-color)]"></span>
               </span>
             </motion.h1>
 
@@ -99,7 +99,7 @@ const Hero = () => {
               
               <div className="flex justify-between items-center mb-8">
                 <div className="text-[9px] text-muted tracking-widest">SYSTEM.ID</div>
-                <div className="w-1.5 h-1.5 rounded-full bg-brand animate-pulse shadow-[0_0_8px_#00FF00]"></div>
+                <div className="w-1.5 h-1.5 rounded-full bg-brand animate-pulse shadow-[0_0_8px_var(--brand-color)]"></div>
               </div>
 
               <div className="space-y-4 text-[10px] tracking-wider">
