@@ -71,7 +71,7 @@ const Stack = () => {
             viewport={{ once: true }}
             className="text-5xl md:text-6xl font-bold max-w-2xl leading-[1.0] text-slate-900 dark:text-white"
           >
-            The <span className="text-brand dark:text-glow">workstation</span> I ship from.
+            The <span className="text-brand text-[44px] md:text-6xl dark:text-glow">workstation</span> I ship from.
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
