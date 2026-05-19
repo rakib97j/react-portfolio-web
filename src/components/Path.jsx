@@ -60,7 +60,7 @@ const Path = () => {
   return (
     <section
       id="path"
-      className="py-32 px-6 bg-main-bg relative overflow-hidden transition-colors duration-500"
+      className="py-5 px-6 bg-main-bg relative overflow-hidden transition-colors duration-500"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div

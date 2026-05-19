@@ -1,6 +1,7 @@
 import  { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink,  ArrowUpRight, Plus, Minus } from 'lucide-react';
+import ExpandableText from './ExpandableText';
 
 
 const Work = () => {
@@ -188,9 +189,11 @@ const Work = () => {
                     {project.title}
                   </h3>
                   
-                  <p className="text-muted text-sm leading-relaxed mb-8 font-medium">
-                    {project.description}
-                  </p>
+                  <div className="mb-8">
+                    <ExpandableText className="text-muted text-sm leading-relaxed font-medium" bgClass="from-slate-50 dark:from-[#080808]">
+                      {project.description}
+                    </ExpandableText>
+                  </div>
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-10 mt-auto">

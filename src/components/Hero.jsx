@@ -2,6 +2,7 @@ import  { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Download, ArrowUpRight } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import Antigravity from './Antigravity';
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -20,6 +21,9 @@ const Hero = () => {
 
   return (
     <section id="index" className="relative min-h-screen pt-32 px-6 flex flex-col justify-center bg-main-bg overflow-hidden transition-colors duration-500">
+      {/* Antigravity Animation Background */}
+      <Antigravity waveSpeed={3.6} />
+
       {/* 3D Perspective Grid */}
       <div className="grid-3d">
         <div className={`grid-3d-inner ${theme === 'light' ? 'opacity-20' : 'opacity-100'}`}></div>
