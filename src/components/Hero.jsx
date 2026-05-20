@@ -84,7 +84,7 @@ const Hero = () => {
                 <a href="#work" className="px-10 py-5 border border-brand text-brand font-bold text-xs tracking-[0.2em] hover:bg-brand/10 transition-all flex items-center gap-4 uppercase group">
                   INITIATE SHOWCASE <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </a>
-                <a href="/public/CV/resume.pdf" target='_blank' className="px-10 py-5 border border-black/10 dark:border-white/10 text-slate-900 dark:text-white font-bold text-xs tracking-[0.2em] hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center gap-4 uppercase group">
+                <a href="/public/CV/resume.pdf" download  className="px-10 py-5 border border-black/10 dark:border-white/10 text-slate-900 dark:text-white font-bold text-xs tracking-[0.2em] hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center gap-4 uppercase group">
                   <Download className="w-4 h-4 text-muted group-hover:text-slate-900 dark:group-hover:text-white transition-colors" /> DOWNLOAD CV
                 </a>
               </div>
