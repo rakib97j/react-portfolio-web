@@ -87,7 +87,7 @@ const Footer = () => {
                 <a
                   download
                   target="_blank"
-                  href="../../public/CV/Rakib-resume.pdf"
+                  href="https://drive.usercontent.google.com/u/0/uc?id=1bVDJRetZGA35AqfY2aQbTSGIusQu4NZo&export=download"
                   className="text-muted hover:text-brand transition-colors uppercase tracking-widest"
                 >
                   Download CV
