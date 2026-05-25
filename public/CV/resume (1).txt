@@ -1,0 +1,44 @@
+MD. RAKIBUL HASSAN RAKIB
+MERN Stack Developer
+
++880 1581-873146|rakibulhassanrakib559@gmail.com |Dhaka, Bangladesh GitHub | LinkedIn | Portfolio
+CAREER OBJECTIVE
+Passionate and self-motivated MERN Stack Developer with a strong interest in building responsive, user-friendly, and scalable web applications. Dedicated to continuous learning and improving development skills through real-world projects. Seeking opportunities to contribute to impactful web solutions while growing as a professional developer.
+
+SKILLS
+Frontend:
+HTML5, CSS3, Tailwind CSS, Daisy UI, JavaScript (ES6), React.js, Next.js, Laravel
+Backend:
+Node.js, Express.js, MongoDB, REST API
+Tools & Technologies:
+Git, GitHub, VS Code, Vercel, Netlify, Firebase, Figma
+Interpersonal Skills:
+Problem Solving, Communication, Team Collaboration, Quick Learning, Time Management
+
+PROJECTS
+
+1. Digi Tools Platform — Digital Tools Management Website	Live Link | GitHub Repository
+Project Overview:
+A modern web platform for exploring and managing digital tools.
+Features:
+a. Responsive design
+b. Dynamic tool listing
+c. React routing
+Technologies Used: React.js, Tailwind CSS, Firebase, Node.js, Express.js
+
+Education/Certifications
+Diploma in Engineering (Computer Science & Technology) 
+Barguna Polytechnic Institute  (22-23)
+
+• MERN Stack Development(B-13) — Programming Hero (6 Months) 
+• Web Desing (Web Design and Development) —Institute of Information & Communication Technology - DUET  
+• Graphic Design (Photoshop & AI Tools Usage) — Patuakhali Science and Technology University (3 Months) 
+
+
+
+
+LANGUAGE
+Bangla — Native
+English — Intermediate
+Hindi — Basic 
+
