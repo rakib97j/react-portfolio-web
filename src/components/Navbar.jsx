@@ -90,7 +90,7 @@ const Navbar = () => {
           </button>
 
           <a
-            href="https://drive.google.com/file/d/1dZvOEq6cTzXzq1pICpjwyw3GjyeyGAlG/view?usp=sharing"
+            href="https://drive.google.com/file/d/1bVDJRetZGA35AqfY2aQbTSGIusQu4NZo/view"
             target="_blank"
             className="hidden md:flex items-center gap-3 px-6 py-2.5 border border-brand/40 text-brand font-mono text-[10px] font-bold tracking-widest hover:bg-brand/10 transition-all rounded-sm relative group overflow-hidden"
           >

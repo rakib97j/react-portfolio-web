@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Code2, Cpu, Coffee } from 'lucide-react';
 import PixelCard from './PixelCard';

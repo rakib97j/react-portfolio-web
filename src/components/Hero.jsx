@@ -20,19 +20,24 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="index" className="relative min-h-screen pt-32 px-6 flex flex-col justify-center bg-main-bg overflow-hidden transition-colors duration-500">
+    <section
+      id="index"
+      className="relative min-h-screen pt-32 px-6 flex flex-col justify-center bg-main-bg overflow-hidden transition-colors duration-500"
+    >
       {/* Antigravity Animation Background */}
       <Antigravity waveSpeed={3.6} />
 
       {/* 3D Perspective Grid */}
       <div className="grid-3d">
-        <div className={`grid-3d-inner ${theme === 'light' ? 'opacity-20' : 'opacity-100'}`}></div>
+        <div
+          className={`grid-3d-inner ${theme === "light" ? "opacity-20" : "opacity-100"}`}
+        ></div>
         <div className="scanline"></div>
       </div>
 
       <div className="max-w-[1800px] mx-auto w-full relative z-10">
         {/* Status Bar */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -40,7 +45,9 @@ const Hero = () => {
         >
           <div className="flex items-center gap-2">
             <div className="status-dot animate-pulse"></div>
-            <span className="text-slate-900 dark:text-white">OPEN TO INTERNSHIP</span>
+            <span className="text-slate-900 dark:text-white">
+              OPEN TO INTERNSHIP
+            </span>
           </div>
           <span className="opacity-30">//</span>
           <span>{time}</span>
@@ -49,50 +56,68 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Main Headline - Giant & Bold */}
           <div className="lg:col-span-8">
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-[50px] md:text-[120px] lg:text-[150px] font-black lg:leading-[0.88] tracking-[-0.04em] text-slate-900 dark:text-white relative"
             >
-              Rakib<br />
+              Rakib
+              <br />
               <span className="relative">
-                Hassan<span className="inline-block w-8 h-8 lg:w-12 lg:h-12 bg-brand rounded-full ml-4 shadow-[0_0_20px_var(--brand-color)]"></span>
+                Hassan
+                <span className="inline-block w-8 h-8 lg:w-12 lg:h-12 bg-brand rounded-full ml-4 shadow-[0_0_20px_var(--brand-color)]"></span>
               </span>
             </motion.h1>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mt-16 max-w-2xl"
             >
               <div className="text-brand font-mono text-xs mb-6 tracking-widest uppercase flex items-center gap-3">
-                <span className="text-muted opacity-30">{'>'}</span> 
+                <span className="text-muted opacity-30">{">"}</span>
                 ROLE::FRONTEND_&_MERN_STACK_DEVELOPER
-                <motion.span 
+                <motion.span
                   animate={{ opacity: [1, 0, 1] }}
-                  transition={{ duration: 1, repeat: Infinity, ease: "steps(1)" }}
+                  transition={{
+                    duration: 1,
+                    repeat: Infinity,
+                    ease: "steps(1)",
+                  }}
                   className="text-brand"
-                >_</motion.span>
+                >
+                  _
+                </motion.span>
               </div>
               <p className="text-xl md:text-2xl text-muted leading-relaxed font-medium">
-                I am a passionate web developer — building scalable, accessible, and visually polished web apps with React and Next.js.
+                I am a passionate web developer — building scalable, accessible,
+                and visually polished web apps with React and Next.js.
               </p>
-              
+
               <div className="flex flex-wrap gap-4 mt-12 mb-6">
-                <a href="#work" className="px-10 py-5 border border-brand text-brand font-bold text-xs tracking-[0.2em] hover:bg-brand/10 transition-all flex items-center gap-4 uppercase group">
-                  INITIATE SHOWCASE <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                <a
+                  href="#work"
+                  className="px-10 py-5 border border-brand text-brand font-bold text-xs tracking-[0.2em] hover:bg-brand/10 transition-all flex items-center gap-4 uppercase group"
+                >
+                  INITIATE SHOWCASE{" "}
+                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </a>
-                <a href="/public/CV/resume.pdf" download  className="px-10 py-5 border border-black/10 dark:border-white/10 text-slate-900 dark:text-white font-bold text-xs tracking-[0.2em] hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center gap-4 uppercase group">
-                  <Download className="w-4 h-4 text-muted group-hover:text-slate-900 dark:group-hover:text-white transition-colors" /> DOWNLOAD CV
+                <a
+                  href="../../public/CV/Rakib-resume.pdf"
+                  download
+                  className="px-10 py-5 border border-black/10 dark:border-white/10 text-slate-900 dark:text-white font-bold text-xs tracking-[0.2em] hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center gap-4 uppercase group"
+                >
+                  <Download className="w-4 h-4 text-muted group-hover:text-slate-900 dark:group-hover:text-white transition-colors" />{" "}
+                  DOWNLOAD CV
                 </a>
               </div>
             </motion.div>
           </div>
 
           {/* System ID Sidebar (Terminal Style) - Optimized Size */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -100,24 +125,36 @@ const Hero = () => {
           >
             <div className="bg-slate-50 dark:bg-white/5 border border-black/5 dark:border-white/10 p-6 md:p-8 backdrop-blur-md relative font-mono overflow-hidden max-w-[340px] ml-auto">
               <div className="absolute top-0 left-0 w-1 h-full bg-brand/20"></div>
-              
+
               <div className="flex justify-between items-center mb-8">
-                <div className="text-[9px] text-muted tracking-widest">SYSTEM.ID</div>
+                <div className="text-[9px] text-muted tracking-widest">
+                  SYSTEM.ID
+                </div>
                 <div className="w-1.5 h-1.5 rounded-full bg-brand animate-pulse shadow-[0_0_8px_var(--brand-color)]"></div>
               </div>
 
               <div className="space-y-4 text-[10px] tracking-wider">
                 <div className="flex justify-between border-b border-black/5 dark:border-white/5 pb-1.5">
-                  <span className="text-muted opacity-50 lowercase">handle</span>
-                  <span className="text-slate-900 dark:text-white">@rakib97j</span>
+                  <span className="text-muted opacity-50 lowercase">
+                    handle
+                  </span>
+                  <span className="text-slate-900 dark:text-white">
+                    @rakib97j
+                  </span>
                 </div>
                 <div className="flex justify-between border-b border-black/5 dark:border-white/5 pb-1.5">
-                  <span className="text-muted opacity-50 lowercase">location</span>
-                  <span className="text-slate-900 dark:text-white uppercase truncate ml-4">GAZIPUR, DHAKA , BANGLADESH</span>
+                  <span className="text-muted opacity-50 lowercase">
+                    location
+                  </span>
+                  <span className="text-slate-900 dark:text-white uppercase truncate ml-4">
+                    GAZIPUR, DHAKA , BANGLADESH
+                  </span>
                 </div>
                 <div className="flex justify-between border-b border-black/5 dark:border-white/5 pb-1.5">
                   <span className="text-muted opacity-50 lowercase">mode</span>
-                  <span className="text-slate-900 dark:text-white uppercase">{theme}.WS</span>
+                  <span className="text-slate-900 dark:text-white uppercase">
+                    {theme}.WS
+                  </span>
                 </div>
                 <div className="flex justify-between border-b border-black/5 dark:border-white/5 pb-1.5">
                   <span className="text-muted opacity-50 lowercase">focus</span>
@@ -127,12 +164,20 @@ const Hero = () => {
 
               <div className="mt-10 flex gap-8">
                 <div>
-                  <div className="text-2xl font-black text-slate-900 dark:text-white">01+</div>
-                  <div className="text-[12px] text-muted mt-0.5 uppercase tracking-tighter">Exp_Year</div>
+                  <div className="text-2xl font-black text-slate-900 dark:text-white">
+                    01+
+                  </div>
+                  <div className="text-[12px] text-muted mt-0.5 uppercase tracking-tighter">
+                    Exp_Year
+                  </div>
                 </div>
                 <div>
-                  <div className="text-2xl font-black text-slate-900 dark:text-white">15+</div>
-                  <div className="text-[12px] text-muted mt-0.5 uppercase tracking-tighter">PROJECT WORK</div>
+                  <div className="text-2xl font-black text-slate-900 dark:text-white">
+                    15+
+                  </div>
+                  <div className="text-[12px] text-muted mt-0.5 uppercase tracking-tighter">
+                    PROJECT WORK
+                  </div>
                 </div>
               </div>
 

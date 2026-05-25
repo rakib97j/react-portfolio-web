@@ -85,8 +85,9 @@ const Footer = () => {
             <ul className="space-y-4 font-mono text-[10px] font-bold">
               <li>
                 <a
+                  download
                   target="_blank"
-                  href="/public/CV/resume.pdf"
+                  href="../../public/CV/Rakib-resume.pdf"
                   className="text-muted hover:text-brand transition-colors uppercase tracking-widest"
                 >
                   Download CV
