@@ -29,6 +29,26 @@ const Work = () => {
     {
       id: "02",
       date: "2026",
+      title: "KeenKeeper",
+      description:
+        "KeenKeeper is a clean, modern Personal Relationship Management (PRM) web application designed to help users systematically track, maintain, and nurture meaningful personal connections and friendships.",
+      tags: [
+        "Next.Js ",
+        "Daisy UI",
+        "JSON",
+        "React-Toastify (NPM Package)",
+        "Tailwind CSS + DaisyUI",
+        "React-Toastify (NPM Package)",
+      ],
+      image: "/projects/keenkeeper.png",
+      links: {
+        source: "https://github.com/rakib97j/KeenKeeper",
+        live: "https://keen-keeper-seven-phi.vercel.app/",
+      },
+    },
+    {
+      id: "03",
+      date: "2026",
       title: "GitHub Issues Tracker",
       description:
         "A live dashboard that fetches and visualizes GitHub issues for any public repository using the GitHub REST API. Includes search, filtering, and a clean responsive Tailwind UI.",
@@ -47,7 +67,7 @@ const Work = () => {
       },
     },
     {
-      id: "03",
+      id: "04",
       date: "2026",
       title: "Job Application Tracker",
       description:
@@ -61,7 +81,7 @@ const Work = () => {
     },
 
     {
-      id: "04",
+      id: "05",
       date: "2026",
       title: "First Portfolio",
       description:
@@ -75,7 +95,7 @@ const Work = () => {
     },
 
     {
-      id: "05",
+      id: "06",
       date: "2026",
       title: "Payoo",
       description:
@@ -89,7 +109,7 @@ const Work = () => {
     },
 
     {
-      id: "06",
+      id: "07",
       date: "2026",
       title: "TechWave",
       description:
@@ -114,9 +134,12 @@ const Work = () => {
   );
 
   return (
-    <section id="work" className="py-32 px-6 bg-main-bg relative transition-colors duration-500">
+    <section
+      id="work"
+      className="py-32 px-6 bg-main-bg relative transition-colors duration-500"
+    >
       <div className="max-w-7xl mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -126,32 +149,34 @@ const Work = () => {
         </motion.div>
 
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-24">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-5xl md:text-6xl font-bold max-w-2xl leading-[1.0] text-slate-900 dark:text-white"
           >
-            Selected projects from the <span className="text-brand dark:text-glow">workshop.</span>
+            Selected projects from the{" "}
+            <span className="text-brand dark:text-glow">workshop.</span>
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             className="text-muted max-w-sm font-mono text-[11px] leading-loose uppercase tracking-wider"
           >
-           "A curated set of products I've designed, architected, and shipped. Each links to its source and a live deployment."
+            "A curated set of products I've designed, architected, and shipped.
+            Each links to its source and a live deployment."
           </motion.p>
         </div>
 
-        <motion.div 
+        <motion.div
           layout
           className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12"
         >
           <AnimatePresence mode="popLayout">
             {displayedProjects.map((project, index) => (
-              <motion.div 
+              <motion.div
                 key={project.id}
                 layout
                 initial={{ opacity: 0, y: 30 }}
@@ -163,21 +188,25 @@ const Work = () => {
               >
                 {/* Image Container with Overlays */}
                 <div className="relative aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-white/5">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover filter grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 group-hover:scale-105"
-                  />
-                  
+                  <a target="_blank" href={project.links.live}>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover filter grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 group-hover:scale-105"
+                    />
+                  </a>
+
                   {/* ID Badge Overlay */}
                   <div className="absolute top-4 left-4 px-3 py-1 bg-black/80 border border-brand/50 backdrop-blur-sm text-brand font-mono text-[9px] font-bold tracking-widest z-10">
                     {project.id} / {project.date}
                   </div>
 
                   {/* Arrow Overlay */}
-                  <div className="absolute top-4 right-4 text-brand opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-10">
-                    <ArrowUpRight className="w-5 h-5" />
-                  </div>
+                  <a target="_blank" href={project.links.live}>
+                    <div className="absolute top-4 right-4 text-brand opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-10">
+                      <ArrowUpRight className="w-5 h-5" />
+                    </div>
+                  </a>
 
                   {/* Bottom Gradient Overlay */}
                   <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -188,9 +217,12 @@ const Work = () => {
                   <h3 className="text-3xl font-black mb-4 group-hover:text-brand transition-colors text-slate-900 dark:text-white tracking-tight uppercase">
                     {project.title}
                   </h3>
-                  
+
                   <div className="mb-8">
-                    <ExpandableText className="text-muted text-sm leading-relaxed font-medium" bgClass="from-slate-50 dark:from-[#080808]">
+                    <ExpandableText
+                      className="text-muted text-sm leading-relaxed font-medium"
+                      bgClass="from-slate-50 dark:from-[#080808]"
+                    >
                       {project.description}
                     </ExpandableText>
                   </div>
@@ -198,7 +230,10 @@ const Work = () => {
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-10 mt-auto">
                     {project.tags.map((tag) => (
-                      <span key={tag} className="px-3 py-1 border border-black/10 dark:border-white/10 text-[9px] font-mono text-muted tracking-widest uppercase group-hover:border-brand/20 transition-colors">
+                      <span
+                        key={tag}
+                        className="px-3 py-1 border border-black/10 dark:border-white/10 text-[9px] font-mono text-muted tracking-widest uppercase group-hover:border-brand/20 transition-colors"
+                      >
                         {tag}
                       </span>
                     ))}
@@ -206,12 +241,20 @@ const Work = () => {
 
                   {/* Footer Links */}
                   <div className="flex items-center gap-8 pt-6 border-t border-black/5 dark:border-white/5">
-                    <a href={project.links.source} className="flex items-center gap-2 font-mono text-[10px] font-bold text-muted hover:text-brand transition-colors tracking-[0.2em] uppercase group/link">
+                    <a
+                      target="_blank"
+                      href={project.links.source}
+                      className="flex items-center gap-2 font-mono text-[10px] font-bold text-muted hover:text-brand transition-colors tracking-[0.2em] uppercase group/link"
+                    >
                       <GitHubIcon />
                       SOURCE
                     </a>
-                    <a href={project.links.live} className="flex items-center gap-2 font-mono text-[10px] font-bold text-muted hover:text-brand transition-colors tracking-[0.2em] uppercase group/link">
-                      <ExternalLink className="w-3.5 h-3.5" /> 
+                    <a
+                      target="_blank"
+                      href={project.links.live}
+                      className="flex items-center gap-2 font-mono text-[10px] font-bold text-muted hover:text-brand transition-colors tracking-[0.2em] uppercase group/link"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
                       LIVE DEMO
                     </a>
                   </div>
@@ -226,14 +269,20 @@ const Work = () => {
 
         {/* View More Button - Bottom Right */}
         <div className="mt-16 flex justify-end">
-          <button 
+          <button
             onClick={() => setShowAll(!showAll)}
             className="flex items-center gap-4 px-10 py-5 border border-brand text-brand font-bold text-xs tracking-[0.2em] hover:bg-brand/10 transition-all uppercase group"
           >
             {showAll ? (
-              <>COLLAPSE VIEW <Minus className="w-4 h-4 group-hover:scale-110 transition-transform" /></>
+              <>
+                COLLAPSE VIEW{" "}
+                <Minus className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              </>
             ) : (
-              <>VIEW ALL PROJECTS <Plus className="w-4 h-4 group-hover:rotate-90 transition-transform" /></>
+              <>
+                VIEW ALL PROJECTS{" "}
+                <Plus className="w-4 h-4 group-hover:rotate-90 transition-transform" />
+              </>
             )}
           </button>
         </div>
