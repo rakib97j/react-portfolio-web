@@ -20,7 +20,9 @@ const Work = () => {
         "React-Toastify (NPM Package)",
         "Tailwind CSS + DaisyUI",
       ],
-      image: "/projects/digitols.png",
+      // image: "/projects/digitols.png",
+      image:
+        "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518097/digitols_cvnw1k.png",
       links: {
         source: "https://github.com/rakib97j/DigiTools",
         live: "https://digitool-rakib97j.netlify.app/",
@@ -40,7 +42,9 @@ const Work = () => {
         "Tailwind CSS + DaisyUI",
         "React-Toastify (NPM Package)",
       ],
-      image: "/projects/keenkeeper.png",
+      // image: "/projects/keenkeeper.png",
+      image:
+        "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518098/keenkeeper_k1gewm.png",
       links: {
         source: "https://github.com/rakib97j/KeenKeeper",
         live: "https://keen-keeper-seven-phi.vercel.app/",
@@ -60,7 +64,9 @@ const Work = () => {
         "Tailwind CSS",
         "HTML",
       ],
-      image: "/projects/githubissue.png",
+      // image: "/projects/githubissue.png",
+      image:
+        "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518097/githubissue_ahvgh0.png",
       links: {
         source: "https://github.com/rakib97j/GitHub-Issues-Tracker",
         live: "https://rakib97j.github.io/GitHub-Issues-Tracker/",
@@ -73,7 +79,9 @@ const Work = () => {
       description:
         "The Job Application Tracker is a simple and user-friendly web application that helps users manage their job search process efficiently. It allows users to track the total number of job applications, interviews, and rejected applications in one place.",
       tags: ["HTML", "JavaScript", "Tailwind"],
-      image: "/projects/JAT.png",
+      // image: "/projects/JAT.png",
+      image:
+        "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518098/JAT_aphv1f.png",
       links: {
         source: "https://github.com/rakib97j/Job-Application-Tracker",
         live: "https://rakib97j.github.io/Job-Application-Tracker/",
@@ -87,7 +95,9 @@ const Work = () => {
       description:
         "After a dedicated journey of learning and building, I am thrilled to share my first personal portfolio website!",
       tags: ["HTML", "Tailwind CSS"],
-      image: "/projects/HTportfoloi.png",
+      // image: "/projects/HTportfoloi.png",
+      image:
+        "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518098/HTportfoloi_z1kkjh.png",
       links: {
         source: "https://github.com/rakib97j/portfolio-web",
         live: "https://rakib97j.github.io/portfolio-web/",
@@ -101,7 +111,9 @@ const Work = () => {
       description:
         "Payoo is a secure and user-friendly personal mobile financial service interface. It features a clean login system and a responsive dashboard designed to simulate essential financial transactions like sending money, adding money, and managing a digital wallet with a focus on seamless user experience.",
       tags: ["HTML", "Java Script", "Tailwind"],
-      image: "/projects/pay.png",
+      // image: "/projects/pay.png",
+      image:
+        "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518097/pay_o7fhq7.png",
       links: {
         source: "https://github.com/rakib97j/parsonal-paymant-system",
         live: "https://rakib97j.github.io/parsonal-paymant-system/",
@@ -115,7 +127,10 @@ const Work = () => {
       description:
         "A modern landing page concept for a tech-focused brand, built with semantic HTML and pure CSS. Focused on clean typography, layout craft, and a responsive, distraction-free experience.",
       tags: ["HTML", "CSS"],
-      image: "/public/projects/jat.png",
+      // image: "/public/projects/jat.png",
+      image:
+        "https://res.cloudinary.com/ddzrquvqx/image/upload/f_auto,q_auto/Screenshot_2026-05-13_022011_nekkln",
+
       links: {
         source: "https://github.com/rakib97j/TechWave",
         live: "https://rakib97j.github.io/TechWave/",
