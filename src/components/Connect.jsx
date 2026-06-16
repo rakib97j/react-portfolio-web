@@ -1,52 +1,51 @@
+import { motion } from "framer-motion";
+import { ArrowUpRight, UserPlus, Fingerprint } from "lucide-react";
 
-import { motion } from 'framer-motion';
-import { ArrowUpRight,  UserPlus, Fingerprint } from 'lucide-react';
-
-import rakibImg from '../../public/projects/rakib1.jpg'
+import rakibImg from "../../public/projects/rakib1.jpg";
 
 const Connect = () => {
   const channels = [
     {
-      name: 'GitHub',
-      handle: '/RAKIB97J',
-      href: 'https://github.com/RAKIB97J',
-      icon: 'fab fa-github',
+      name: "GitHub",
+      handle: "/RAKIB97J",
+      href: "https://github.com/RAKIB97J",
+      icon: "fab fa-github",
     },
     {
-      name: 'LinkedIn',
-      handle: '/IN/RAKIB97J',
-      href: 'https://linkedin.com/in/RAKIB97J',
-      icon: 'fab fa-linkedin-in',
+      name: "LinkedIn",
+      handle: "/IN/RAKIB97J",
+      href: "https://linkedin.com/in/RAKIB97J",
+      icon: "fab fa-linkedin-in",
     },
     {
-      name: 'Twitter / X',
-      handle: '@RAKIB97J',
-      href: 'https://twitter.com/RAKIB97J',
-      icon: 'fab fa-x-twitter',
+      name: "Twitter / X",
+      handle: "@RAKIB97J",
+      href: "https://twitter.com/RAKIB97J",
+      icon: "fab fa-x-twitter",
     },
     {
-      name: 'Facebook',
-      handle: '/RAKIB97J',
-      href: 'https://facebook.com/RAKIB97J',
-      icon: 'fab fa-facebook-f',
+      name: "Facebook",
+      handle: "/RAKIB97J",
+      href: "https://facebook.com/RAKIB97J",
+      icon: "fab fa-facebook-f",
     },
     {
-      name: 'Instagram',
-      handle: '@RAKIB97J',
-      href: 'https://instagram.com/RAKIB97J',
-      icon: 'fab fa-instagram',
+      name: "Instagram",
+      handle: "@RAKIB97J",
+      href: "https://instagram.com/RAKIB97J",
+      icon: "fab fa-instagram",
     },
     {
-      name: 'Threads',
-      handle: '@RAKIB97J',
-      href: 'https://threads.net/@RAKIB97J',
-      icon: 'fas fa-at',
+      name: "Threads",
+      handle: "@RAKIB97J",
+      href: "https://threads.net/@RAKIB97J",
+      icon: "fas fa-at",
     },
     {
-      name: 'Email',
-      handle: 'RAKIBULHASSANRAKIB559@GMAIL.COM',
-      href: 'mailto:rakibulhassansrakib559@gmail.com',
-      icon: 'far fa-envelope',
+      name: "Email",
+      handle: "RAKIBULHASSANRAKIB559@GMAIL.COM",
+      href: "mailto:rakibulhassansrakib559@gmail.com",
+      icon: "far fa-envelope",
     },
   ];
 
@@ -118,7 +117,7 @@ const Connect = () => {
           </div>
 
           {/* Right Placeholder Element (Glassmorphism Profile Card) */}
-          <div className="lg:col-span-5 hidden lg:block">
+          <div className="lg:col-span-5  lg:block">
             <motion.div
               initial={{ opacity: 0, scale: 0.9, rotateY: 20 }}
               whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
@@ -195,7 +194,7 @@ const Connect = () => {
                       <div className="font-mono text-[8px] text-muted uppercase tracking-widest mb-1">
                         Access
                       </div>
-                      <div className="font-bold text-brand text-[10px] tracking-widest uppercase">
+                      <div className="font-bold text-brand  text-[10px] tracking-widest uppercase">
                         GAZIPUR || REMOTE_OK
                       </div>
                     </div>
@@ -210,7 +209,7 @@ const Connect = () => {
                 <div className="absolute inset-0 border border-brand/0 group-hover:border-brand/20 transition-all duration-700 pointer-events-none"></div>
               </div>
 
-              {/* Backglow element */}
+              {/* Back glow element */}
               <div className="absolute -inset-4 bg-brand/5 blur-2xl rounded-full -z-20 group-hover:bg-brand/10 transition-all"></div>
             </motion.div>
           </div>
