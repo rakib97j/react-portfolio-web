@@ -12,6 +12,28 @@ const Work = () => {
     {
       id: "02",
       date: "2026",
+      title: "SkillSphere",
+      description:
+        "A modern, full-stack online learning platform designed to help learners explore skill-based courses, manage profiles, and discover learning opportunities through a highly responsive and intuitive UI.",
+      tags: [
+        "Next.js (App Router)",
+        "React.js",
+        "Tailwind CSS + HeroUI",
+        "BetterAuth (Google OAuth)",
+        "MongoDB Atlas",
+        "Next-Themes (Dark/Light)",
+        "Swiper.js",
+      ],
+      image:
+        "https://res.cloudinary.com/ddzrquvqx/image/upload/v1782138189/Screenshot_2026-06-22_202249_gdwrue.png",
+      links: {
+        source: "https://github.com/rakib97j/Skill-Sphere",
+        live: "https://skill-sphere-three-blond.vercel.app/",
+      },
+    },
+    {
+      id: "02",
+      date: "2026",
       title: "Digi Tool",
       description:
         "A modern, responsive marketplace for premium digital products  AI tools, design assets, templates, and productivity software, all in one place.",
