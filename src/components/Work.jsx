@@ -8,27 +8,7 @@ const Work = () => {
   const [showAll, setShowAll] = useState(false);
 
   const projects = [
-    {
-  id: "01", 
-  date: "2026",
-  title: "SkillSphere",
-  description:
-    "A modern, full-stack online learning platform designed to help learners explore skill-based courses, manage profiles, and discover learning opportunities through a highly responsive and intuitive UI.",
-  tags: [
-    "Next.js (App Router)",
-    "React.js",
-    "Tailwind CSS + HeroUI",
-    "BetterAuth (Google OAuth)",
-    "MongoDB Atlas",
-    "Next-Themes (Dark/Light)",
-    "Swiper.js",
-  ],
-  image: "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518098/HTportfoloi_z1kkjh.png", 
-  links: {
-    source: "https://github.com/rakib97j/SkillSphere", 
-    live: "https://skill-sphere-three-blond.vercel.app/",
-  },
-}
+ 
     {
       id: "02",
       date: "2026",
