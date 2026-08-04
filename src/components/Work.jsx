@@ -10,7 +10,7 @@ const Work = () => {
   const projects = [
  
     {
-      id: "02",
+      id: "01",
       date: "2026",
       title: "SkillSphere",
       description:
