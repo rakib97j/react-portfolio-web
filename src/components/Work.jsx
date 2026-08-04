@@ -8,9 +8,34 @@ const Work = () => {
   const [showAll, setShowAll] = useState(false);
 
   const projects = [
- 
     {
       id: "01",
+      date: "2026",
+      title: "Idea-Vault",
+      description:
+        "A modern, full-stack startup idea sharing platform where users can publish innovative ideas, explore ideas from the community, and engage through comments and discussions in a responsive and intuitive user interface.",
+      tags: [
+         "Next.js (App Router)",
+    "React.js",
+    "Tailwind CSS + HeroUI",
+    "Node.js + Express.js",
+    "MongoDB Atlas",
+    "JWT Authentication",
+    "Better Auth (Google OAuth)",
+    "React Hot Toast",
+    "Framer Motion",
+    "Next-Themes (Dark/Light)"
+      ],
+      image:
+        "https://res.cloudinary.com/ddzrquvqx/image/upload/v1785856391/Screenshot_2026-08-04_211126_aikyzy.png",
+      links: {
+        source: "https://github.com/rakib97j/Idea-Vault",
+        live: "https://idea-vault-omega.vercel.app",
+      },
+    },
+ 
+    {
+      id: "02",
       date: "2026",
       title: "SkillSphere",
       description:
@@ -32,7 +57,7 @@ const Work = () => {
       },
     },
     {
-      id: "02",
+      id: "03",
       date: "2026",
       title: "Digi Tool",
       description:
@@ -43,7 +68,7 @@ const Work = () => {
         "React-Toastify (NPM Package)",
         "Tailwind CSS + DaisyUI",
       ],
-      // image: "/projects/digitols.png",
+     
       image:
         "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518097/digitols_cvnw1k.png",
       links: {
@@ -52,7 +77,7 @@ const Work = () => {
       },
     },
     {
-      id: "03",
+      id: "04",
       date: "2026",
       title: "KeenKeeper",
       description:
@@ -65,7 +90,7 @@ const Work = () => {
         "Tailwind CSS + DaisyUI",
         "React-Toastify (NPM Package)",
       ],
-      // image: "/projects/keenkeeper.png",
+      
       image:
         "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518098/keenkeeper_k1gewm.png",
       links: {
@@ -74,7 +99,7 @@ const Work = () => {
       },
     },
     {
-      id: "04",
+      id: "05",
       date: "2026",
       title: "GitHub Issues Tracker",
       description:
@@ -87,7 +112,7 @@ const Work = () => {
         "Tailwind CSS",
         "HTML",
       ],
-      // image: "/projects/githubissue.png",
+      
       image:
         "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518097/githubissue_ahvgh0.png",
       links: {
@@ -96,13 +121,13 @@ const Work = () => {
       },
     },
     {
-      id: "05",
+      id: "06",
       date: "2026",
       title: "Job Application Tracker",
       description:
         "The Job Application Tracker is a simple and user-friendly web application that helps users manage their job search process efficiently. It allows users to track the total number of job applications, interviews, and rejected applications in one place.",
       tags: ["HTML", "JavaScript", "Tailwind"],
-      // image: "/projects/JAT.png",
+      
       image:
         "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518098/JAT_aphv1f.png",
       links: {
@@ -112,13 +137,13 @@ const Work = () => {
     },
 
     {
-      id: "06",
+      id: "07",
       date: "2026",
       title: "First Portfolio",
       description:
         "After a dedicated journey of learning and building, I am thrilled to share my first personal portfolio website!",
       tags: ["HTML", "Tailwind CSS"],
-      // image: "/projects/HTportfoloi.png",
+    
       image:
         "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518098/HTportfoloi_z1kkjh.png",
       links: {
@@ -127,21 +152,7 @@ const Work = () => {
       },
     },
 
-    {
-      id: "07",
-      date: "2026",
-      title: "Payoo",
-      description:
-        "Payoo is a secure and user-friendly personal mobile financial service interface. It features a clean login system and a responsive dashboard designed to simulate essential financial transactions like sending money, adding money, and managing a digital wallet with a focus on seamless user experience.",
-      tags: ["HTML", "Java Script", "Tailwind"],
-      // image: "/projects/pay.png",
-      image:
-        "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518097/pay_o7fhq7.png",
-      links: {
-        source: "https://github.com/rakib97j/parsonal-paymant-system",
-        live: "https://rakib97j.github.io/parsonal-paymant-system/",
-      },
-    },
+   
 
     {
       id: "08",
