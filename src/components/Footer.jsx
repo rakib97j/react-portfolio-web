@@ -85,7 +85,7 @@ const Footer = () => {
             <ul className="space-y-4 font-mono text-[10px] font-bold">
               <li>
                 <a
-                  href="https://drive.usercontent.google.com/u/0/uc?id=1bVDJRetZGA35AqfY2aQbTSGIusQu4NZo&export=download"
+                 href="https://drive.google.com/uc?export=download&id=1QPLDXNtv5kINytavGFeAXvtH3bv1-Vx5"
                   download
                   className="text-muted hover:text-brand transition-colors uppercase tracking-widest"
                 >

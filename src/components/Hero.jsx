@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="scanline"></div>
       </div>
 
-      <div className="max-w-[1800px] mx-auto w-full relative z-10">
+      <div className="max-w-450 mx-auto w-full relative z-10">
         {/* Status Bar */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -105,7 +105,8 @@ const Hero = () => {
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </a>
                 <a
-                  href="https://drive.usercontent.google.com/u/0/uc?id=1bVDJRetZGA35AqfY2aQbTSGIusQu4NZo&export=download"
+                  
+                  href="https://drive.google.com/uc?export=download&id=1QPLDXNtv5kINytavGFeAXvtH3bv1-Vx5"
                   download
                   className="px-10 py-5 border border-black/10 dark:border-white/10 text-slate-900 dark:text-white font-bold text-xs tracking-[0.2em] hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center gap-4 uppercase group"
                 >
@@ -123,7 +124,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="lg:col-span-4 hidden lg:block"
           >
-            <div className="bg-slate-50 dark:bg-white/5 border border-black/5 dark:border-white/10 p-6 md:p-8 backdrop-blur-md relative font-mono overflow-hidden max-w-[340px] ml-auto">
+            <div className="bg-slate-50 dark:bg-white/5 border border-black/5 dark:border-white/10 p-6 md:p-8 backdrop-blur-md relative font-mono overflow-hidden max-w-85 ml-auto">
               <div className="absolute top-0 left-0 w-1 h-full bg-brand/20"></div>
 
               <div className="flex justify-between items-center mb-8">
@@ -189,7 +190,7 @@ const Hero = () => {
       </div>
 
       {/* Decorative Blur */}
-      <div className="absolute top-[20%] right-[-10%] w-[500px] h-[500px] bg-brand/5 blur-[150px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-[20%] right-[-10%] w-125 h-125 bg-brand/5 blur-[150px] rounded-full pointer-events-none"></div>
     </section>
   );
 };

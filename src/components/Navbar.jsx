@@ -43,7 +43,7 @@ const Navbar = () => {
         scrolled ? "py-3" : "py-6"
       }`}
     >
-      <div className="max-w-[1800px] mx-auto px-8 flex justify-between items-center">
+      <div className="max-w-450 mx-auto px-8 flex justify-between items-center">
         <a href="#index" className="flex items-center gap-4 group">
           <div className="w-10 h-10 rounded-sm border border-brand/30 flex items-center justify-center bg-brand/10 group-hover:bg-brand/20 transition-all duration-300">
             <p href="/index.html">
@@ -90,7 +90,7 @@ const Navbar = () => {
           </button>
 
           <a
-            href="https://drive.google.com/file/d/1bVDJRetZGA35AqfY2aQbTSGIusQu4NZo/view"
+            href="https://drive.google.com/file/d/1QPLDXNtv5kINytavGFeAXvtH3bv1-Vx5/view"
             target="_blank"
             className="hidden md:flex items-center gap-3 px-6 py-2.5 border border-brand/40 text-brand font-mono text-[10px] font-bold tracking-widest hover:bg-brand/10 transition-all rounded-sm relative group overflow-hidden"
           >

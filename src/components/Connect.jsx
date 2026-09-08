@@ -17,11 +17,11 @@ const Connect = () => {
       href: "https://linkedin.com/in/RAKIB97J",
       icon: "fab fa-linkedin-in",
     },
-    {
-      name: "Twitter / X",
-      handle: "@RAKIB97J",
-      href: "https://twitter.com/RAKIB97J",
-      icon: "fab fa-x-twitter",
+     {
+      name: "Email",
+      handle: "RAKIBULHASSANRAKIB559@GMAIL.COM",
+      href: "mailto:rakibulhassansrakib559@gmail.com",
+      icon: "far fa-envelope",
     },
     {
       name: "Facebook",
@@ -29,24 +29,14 @@ const Connect = () => {
       href: "https://facebook.com/RAKIB97J",
       icon: "fab fa-facebook-f",
     },
-    {
-      name: "Instagram",
+     {
+      name: "Twitter / X",
       handle: "@RAKIB97J",
-      href: "https://instagram.com/RAKIB97J",
-      icon: "fab fa-instagram",
+      href: "https://twitter.com/RAKIB97J",
+      icon: "fab fa-x-twitter",
     },
-    {
-      name: "Threads",
-      handle: "@RAKIB97J",
-      href: "https://threads.net/@RAKIB97J",
-      icon: "fas fa-at",
-    },
-    {
-      name: "Email",
-      handle: "RAKIBULHASSANRAKIB559@GMAIL.COM",
-      href: "mailto:rakibulhassansrakib559@gmail.com",
-      icon: "far fa-envelope",
-    },
+   
+   
   ];
 
   return (
@@ -55,7 +45,7 @@ const Connect = () => {
       className="py-32 px-6 bg-main-bg relative transition-colors duration-500 overflow-hidden"
     >
       {/* Background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand/5 blur-[150px] rounded-full -z-10"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-brand/5 blur-[150px] rounded-full -z-10"></div>
 
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -67,7 +57,7 @@ const Connect = () => {
           <span className="font-mono text-[10px] text-brand tracking-widest">
             05
           </span>
-          <div className="h-[1px] w-12 bg-brand/30"></div>
+          <div className="h-px w-12 bg-brand/30"></div>
           <span className="font-mono text-[10px] text-muted tracking-widest uppercase">
             CONNECT / CHANNELS
           </span>
@@ -123,7 +113,7 @@ const Connect = () => {
               whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="relative aspect-[4/5] max-w-[420px] ml-auto"
+              className="relative aspect-4/5 max-w-105 ml-auto"
             >
               {/* Main Card Frame */}
               <div className="absolute inset-0 bg-slate-50/50 dark:bg-white/5 border border-black/10 dark:border-white/10 backdrop-blur-2xl rounded-sm overflow-hidden group">
@@ -170,7 +160,7 @@ const Connect = () => {
                           repeat: Infinity,
                           ease: "linear",
                         }}
-                        className="absolute left-0 w-full h-[1px] bg-brand/50 blur-[2px] z-10"
+                        className="absolute left-0 w-full h-px bg-brand/50 blur-[2px] z-10"
                       />
                     </div>
                     <div className="text-[9px] font-mono text-muted tracking-[0.4em] uppercase opacity-40">
@@ -246,7 +236,7 @@ const Connect = () => {
               </div>
               <ArrowUpRight className="w-4 h-4 text-muted group-hover:text-brand transition-all transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 relative z-10" />
 
-              <div className="absolute inset-0 bg-brand/0 group-hover:bg-brand/[0.02] transition-colors"></div>
+              <div className="absolute inset-0 bg-brand/0 group-hover:bg-brand/2 transition-colors"></div>
             </motion.a>
           ))}
         </div>
