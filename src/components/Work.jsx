@@ -1,13 +1,37 @@
-import  { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink,  ArrowUpRight, Plus, Minus } from 'lucide-react';
-import ExpandableText from './ExpandableText';
-
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ExternalLink, ArrowUpRight, Plus, Minus } from "lucide-react";
+import ExpandableText from "./ExpandableText";
 
 const Work = () => {
   const [showAll, setShowAll] = useState(false);
 
   const projects = [
+    {
+      id: "05",
+      date: "2026",
+      title: "Fable",
+      description:
+        "Fable is a full-stack digital e-book platform featuring role-based authorization, secure Stripe payment integration, seamless user management with BetterAuth, dynamic content delivery, and an interactive admin dashboard.",
+      tags: [
+        "Next.js",
+        "Node.js",
+        "Tailwind CSS + HeroUI",
+        "MongoDB Atlas",
+        "Express.js",
+        "Stripe",
+        "Better Auth (Google OAuth)",
+        "Framer Motion",
+        "JWT Authentication",
+        "Role-based access control",
+      ],
+      image:
+        "https://res.cloudinary.com/ddzrquvqx/image/upload/v1789461305/Screenshot_2026-09-15_143411_cnwyi2.png",
+      links: {
+        source: "https://github.com/rakib97j/Fable",
+        live: "https://fable-sage.vercel.app",
+      },
+    },
     {
       id: "01",
       date: "2026",
@@ -15,16 +39,15 @@ const Work = () => {
       description:
         "A modern, full-stack startup idea sharing platform where users can publish innovative ideas, explore ideas from the community, and engage through comments and discussions in a responsive and intuitive user interface.",
       tags: [
-         "Next.js (App Router)",
-    "React.js",
-    "Tailwind CSS + HeroUI",
-    "Node.js + Express.js",
-    "MongoDB Atlas",
-    "JWT Authentication",
-    "Better Auth (Google OAuth)",
-    "React Hot Toast",
-    "Framer Motion",
-    "Next-Themes (Dark/Light)"
+        "Next.js (App Router)",
+        "Tailwind CSS + HeroUI",
+        "Node.js + Express.js",
+        "MongoDB Atlas",
+        "JWT Authentication",
+        "Better Auth (Google OAuth)",
+        "React Hot Toast",
+        "Framer Motion",
+        "Next-Themes (Dark/Light)",
       ],
       image:
         "https://res.cloudinary.com/ddzrquvqx/image/upload/v1785856391/Screenshot_2026-08-04_211126_aikyzy.png",
@@ -33,7 +56,7 @@ const Work = () => {
         live: "https://idea-vault-omega.vercel.app",
       },
     },
- 
+
     {
       id: "02",
       date: "2026",
@@ -68,7 +91,7 @@ const Work = () => {
         "React-Toastify (NPM Package)",
         "Tailwind CSS + DaisyUI",
       ],
-     
+
       image:
         "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518097/digitols_cvnw1k.png",
       links: {
@@ -90,7 +113,7 @@ const Work = () => {
         "Tailwind CSS + DaisyUI",
         "React-Toastify (NPM Package)",
       ],
-      
+
       image:
         "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518098/keenkeeper_k1gewm.png",
       links: {
@@ -112,7 +135,7 @@ const Work = () => {
         "Tailwind CSS",
         "HTML",
       ],
-      
+
       image:
         "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518097/githubissue_ahvgh0.png",
       links: {
@@ -127,7 +150,7 @@ const Work = () => {
       description:
         "The Job Application Tracker is a simple and user-friendly web application that helps users manage their job search process efficiently. It allows users to track the total number of job applications, interviews, and rejected applications in one place.",
       tags: ["HTML", "JavaScript", "Tailwind"],
-      
+
       image:
         "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518098/JAT_aphv1f.png",
       links: {
@@ -143,7 +166,7 @@ const Work = () => {
       description:
         "After a dedicated journey of learning and building, I am thrilled to share my first personal portfolio website!",
       tags: ["HTML", "Tailwind CSS"],
-    
+
       image:
         "https://res.cloudinary.com/ddzrquvqx/image/upload/q_auto/f_auto/v1780518098/HTportfoloi_z1kkjh.png",
       links: {
@@ -151,8 +174,6 @@ const Work = () => {
         live: "https://rakib97j.github.io/portfolio-web/",
       },
     },
-
-   
 
     {
       id: "08",
@@ -176,7 +197,15 @@ const Work = () => {
 
   // Custom GitHub SVG to avoid lucide-react export issues
   const GitHubIcon = () => (
-    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      className="w-3.5 h-3.5"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
       <path d="M9 18c-4.51 2-5-2-7-2" />
     </svg>
