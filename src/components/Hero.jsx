@@ -92,8 +92,8 @@ const Hero = () => {
                 </motion.span>
               </div>
               <p className="text-xl md:text-2xl text-muted leading-relaxed font-medium">
-                I am a passionate web developer — building scalable, accessible,
-                and visually polished web apps with React and Next.js.
+                I’m a Junior Full-Stack Developer building modern, responsive web applications with Next.js, MERN, and modern web technologies.
+
               </p>
 
               <div className="flex flex-wrap gap-4 mt-12 mb-6">
