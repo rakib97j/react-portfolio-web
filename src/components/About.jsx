@@ -5,17 +5,17 @@ import ExpandableText from './ExpandableText';
 
 const About = () => {
   const metrics = [
-    { label: 'PROJECT WORK', value: '15+', icon: Code2 },
+    { label: 'PROJECT WORK', value: '10+', icon: Code2 },
     { label: 'YEARS BUILDING', value: '1+', icon: Cpu },
     { label: 'COFFEE PER SHIP', value: '∞', icon: Coffee },
   ];
 
   const tags = [
-    'SYSTEMS THINKING',
-    'DESIGN SYSTEMS',
-    'REAL-TIME UX',
-    'EDGE RENDERING',
-    'DX-FIRST',
+    'NEXT.JS',
+    'MERN STACK',
+    'REST APIs',
+    'AUTHENTICATION',
+    'RESPONSIVE UI',
   ];
 
   return (
@@ -36,7 +36,7 @@ const About = () => {
           <span className="font-mono text-[10px] text-brand tracking-widest">
             01
           </span>
-          <div className="h-[1px] w-12 bg-brand/30"></div>
+          <div className="h-px w-12 bg-brand/30"></div>
           <span className="font-mono text-[10px] text-muted tracking-widest uppercase">
             ABOUT / IDENTITY
           </span>
@@ -49,7 +49,7 @@ const About = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-5xl md:text-7xl font-bold mb-10 leading-[1.0] tracking-tighter text-slate-900 dark:text-white"
+              className="text-5xl md:text-7xl font-bold mb-10 leading-none tracking-tighter text-slate-900 dark:text-white"
             >
               Engineering interfaces that feel{" "}
               <span className="text-brand dark:text-glow italic">alive.</span>
@@ -64,19 +64,10 @@ const About = () => {
             >
               <ExpandableText bgClass="from-white dark:from-black" className="space-y-8">
                 <p>
-                  MERN Stack Developer focused on Building Scalable Web Apps with
-                  React & Next.js. Frontend Specialist and JavaScript enthusiast —
-                  currently pursuing a Diploma in Computer Science at Barguna
-                  Polytechnic Institute. I love turning ideas into clean, fast,
-                  and accessible interfaces, and I am actively building real-world
-                  projects while looking for an internship opportunity to grow
-                  with a great team.
+                  Junior MERN Stack Developer and Frontend Developer focused on building modern, responsive web applications with Next.js. I work with Node.js, Express.js, MongoDB, REST APIs, and modern web technologies to turn ideas into functional and user-friendly experiences. I’m continuously learning through real-world projects and looking for an opportunity to contribute to a development team, solve real problems, and grow through practical experience.
                 </p>
                 <p className="text-base text-muted/80 leading-relaxed">
-                  I treat the browser as a workstation: every keystroke, every
-                  transition, every millisecond of latency is a design decision.
-                  My favourite projects sit at the intersection of clean systems
-                  thinking and unapologetically distinctive UI.
+                  I enjoy turning ideas into real products and learning through the process. From building responsive interfaces to connecting APIs, databases, and authentication systems, I like working on different parts of a web application and understanding how everything comes together.
                 </p>
               </ExpandableText>
             </motion.div>

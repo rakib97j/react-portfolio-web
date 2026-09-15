@@ -174,7 +174,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <div className="text-2xl font-black text-slate-900 dark:text-white">
-                    15+
+                    10+
                   </div>
                   <div className="text-[12px] text-muted mt-0.5 uppercase tracking-tighter">
                     PROJECT WORK
