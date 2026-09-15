@@ -17,39 +17,36 @@ const techLogos = [
 ];
 
 const Stack = () => {
-  const [activeTab, setActiveTab] = useState('languages');
+  const [activeTab, setActiveTab] = useState('frontend');
 
   const categories = [
-    { id: 'languages', label: 'LANGUAGES', icon: 'fas fa-code' },
-    { id: 'frameworks', label: 'FRAMEWORKS', icon: 'fas fa-cubes' },
+    { id: 'frontend', label: 'FRONTEND', icon: 'fas fa-code' },
+    { id: 'backend', label: 'BACKEND', icon: 'fa-solid fa-server' },
     { id: 'tools', label: 'TOOLS', icon: 'fas fa-screwdriver-wrench' },
   ];
 
   const stack = {
-    languages: [
-      { name: "JavaScript", level: "", icon: "fab fa-js" },
-      { name: "PHP", level: "", icon: "fab fa-php" },
+    frontend: [
       { name: "HTML", level: "", icon: "fab fa-html5" },
       { name: "CSS", level: "", icon: "fab fa-css3-alt" },
-      { name: "SQL", level: "", icon: "fas fa-database" },
-    ],
-    frameworks: [
-      { name: "MongoDB", level: "", icon: "fas fa-leaf" },
-      { name: "Express.js", level: "", icon: "fas fa-server" },
-      { name: "React.js", level: "", icon: "fab fa-react" },
-      { name: "Node.js", level: "", icon: "fab fa-node-js" },
+      { name: "JavaScript", level: "", icon: "fab fa-js" },
       { name: "Next.js", level: "", icon: "fas fa-cube" },
-      { name: 'Laravel', level: '', icon: 'fab fa-laravel' },
-      { name: "Tailwind CSS", level: "EXPERT", icon: "fas fa-wind" },
-
-      { name: "Bootstrap", level: "EXPERT", icon: "fab fa-bootstrap" },
+      { name: "React.js", level: "", icon: "fab fa-react" },
+      { name: "Tailwind CSS", level: "", icon: "fa-brands fa-tailwind-css" },
+      { name: "Bootstrap", level: "", icon: "fab fa-bootstrap" },
+      { name: "Daisy UI", level: "", icon: "fas fa-certificate" },
+      { name: "Hero UI", level: "", icon: "fa-brands fa-superpowers" },
+      
+    ],
+    backend: [
+      { name: "Node.js", level: "", icon: "fa-brands fa-node" },
+      { name: "MongoDB", level: "", icon: "fa-brands fa-mdb" },
+      { name: "Express.js", level: "", icon: "fas fa-server" },
+      
     ],
     tools: [
       { name: "Git / GitHub", level: "", icon: "fab fa-github" },
-      { name: "Postman", level: "", icon: "fas fa-rocket" },
       { name: "VS Code", level: "", icon: "fas fa-laptop-code" },
-      { name: "Figma", level: "", icon: "fab fa-figma" },
-      { name: "Firebase", level: "", icon: "fas fa-fire" },
       { name: "Netlify", level: "", icon: "fas fa-cloud-arrow-up" },
       {
         name: "Vercel",
@@ -57,10 +54,8 @@ const Stack = () => {
         icon: "fas fa-triangle-exclamation",
       },
       { name: "Canva", level: "", icon: "fas fa-palette" },
-      { name: "Font Awesome", level: "", icon: "fab fa-font-awesome" },
-      { name: "Daisy UI", level: "", icon: "fas fa-certificate" },
+      
       { name: "Google Fonts", level: "", icon: "fas fa-font" },
-      { name: "NPM", level: "", icon: "fab fa-npm" },
       { name: "React Icons", level: "", icon: "fab fa-reacteurope" },
     ],
   };
@@ -75,7 +70,7 @@ const Stack = () => {
           className="flex items-center justify-center gap-4 mb-16 px-6"
         >
           <span className="font-mono text-[10px] text-brand tracking-widest">04</span>
-          <div className="h-[1px] w-12 bg-brand/30"></div>
+          <div className="h-px w-12 bg-brand/30"></div>
           <span className="font-mono text-[10px] text-muted tracking-widest uppercase">STACK / TOOLCHAIN</span>
         </motion.div>
 
@@ -84,7 +79,7 @@ const Stack = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-6xl font-bold leading-[1.0] text-slate-900 dark:text-white"
+            className="text-5xl md:text-6xl font-bold leading-none text-slate-900 dark:text-white"
           >
             The <span className="text-brand text-4xl font-black md:font-bold md:text-6xl dark:text-glow">workstation</span> I ship from.
           </motion.h2>
@@ -106,8 +101,8 @@ const Stack = () => {
           viewport={{ once: true }}
           className="w-full relative mb-16 overflow-hidden"
         >
-          <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-main-bg to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-main-bg to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-linear-to-r from-main-bg to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-linear-to-l from-main-bg to-transparent z-10 pointer-events-none"></div>
           <LogoLoop
             logos={techLogos}
             speed={40}
