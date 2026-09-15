@@ -8,7 +8,7 @@ const Work = () => {
 
   const projects = [
     {
-      id: "05",
+      id: "01",
       date: "2026",
       title: "Fable",
       description:
@@ -33,7 +33,7 @@ const Work = () => {
       },
     },
     {
-      id: "01",
+      id: "02",
       date: "2026",
       title: "Idea-Vault",
       description:
@@ -58,7 +58,7 @@ const Work = () => {
     },
 
     {
-      id: "02",
+      id: "03",
       date: "2026",
       title: "SkillSphere",
       description:
@@ -80,7 +80,7 @@ const Work = () => {
       },
     },
     {
-      id: "03",
+      id: "04",
       date: "2026",
       title: "Digi Tool",
       description:
@@ -100,7 +100,7 @@ const Work = () => {
       },
     },
     {
-      id: "04",
+      id: "05",
       date: "2026",
       title: "KeenKeeper",
       description:
@@ -122,7 +122,7 @@ const Work = () => {
       },
     },
     {
-      id: "05",
+      id: "06",
       date: "2026",
       title: "GitHub Issues Tracker",
       description:
@@ -144,7 +144,7 @@ const Work = () => {
       },
     },
     {
-      id: "06",
+      id: "07",
       date: "2026",
       title: "Job Application Tracker",
       description:
@@ -160,7 +160,7 @@ const Work = () => {
     },
 
     {
-      id: "07",
+      id: "08",
       date: "2026",
       title: "First Portfolio",
       description:
@@ -176,7 +176,7 @@ const Work = () => {
     },
 
     {
-      id: "08",
+      id: "09",
       date: "2026",
       title: "TechWave",
       description:
