@@ -70,7 +70,7 @@ const Navbar = () => {
             >
               {item.label}
               {activeSection === item.id && (
-                <div className="absolute -bottom-1 left-0 w-full h-[2px] bg-brand shadow-[0_0_8px_var(--brand-color)]"></div>
+                <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-brand shadow-[0_0_8px_var(--brand-color)]"></div>
               )}
             </a>
           ))}
@@ -90,7 +90,7 @@ const Navbar = () => {
           </button>
 
           <a
-            href="https://drive.google.com/file/d/1QPLDXNtv5kINytavGFeAXvtH3bv1-Vx5/view"
+            href="https://drive.google.com/file/d/12kz4nwwiQ4080hJXnADwPAee7b68xxbF/view?usp=sharing"
             target="_blank"
             className="hidden md:flex items-center gap-3 px-6 py-2.5 border border-brand/40 text-brand font-mono text-[10px] font-bold tracking-widest hover:bg-brand/10 transition-all rounded-sm relative group overflow-hidden"
           >

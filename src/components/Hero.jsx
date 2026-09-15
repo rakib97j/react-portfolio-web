@@ -106,7 +106,7 @@ const Hero = () => {
                 </a>
                 <a
                   
-                  href="https://drive.google.com/uc?export=download&id=1QPLDXNtv5kINytavGFeAXvtH3bv1-Vx5"
+                  href="https://drive.google.com/uc?export=download&id=12kz4nwwiQ4080hJXnADwPAee7b68xxbF&"
                   download
                   className="px-10 py-5 border border-black/10 dark:border-white/10 text-slate-900 dark:text-white font-bold text-xs tracking-[0.2em] hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center gap-4 uppercase group"
                 >
