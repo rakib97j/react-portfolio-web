@@ -111,7 +111,7 @@ const Hero = () => {
                   className="px-10 py-5 border border-black/10 dark:border-white/10 text-slate-900 dark:text-white font-bold text-xs tracking-[0.2em] hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center gap-4 uppercase group"
                 >
                   <Download className="w-4 h-4 text-muted group-hover:text-slate-900 dark:group-hover:text-white transition-colors" />{" "}
-                  DOWNLOAD CV
+                  DOWNLOAD RESUME
                 </a>
               </div>
             </motion.div>
