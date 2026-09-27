@@ -14,7 +14,7 @@ const Connect = () => {
     {
       name: "LinkedIn",
       handle: "/IN/RAKIB97J",
-      href: "https://linkedin.com/in/rkib997j",
+      href: "https://linkedin.com/in/rakib997j",
       icon: "fab fa-linkedin-in",
     },
      {
