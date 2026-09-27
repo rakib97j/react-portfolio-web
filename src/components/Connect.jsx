@@ -8,13 +8,13 @@ const Connect = () => {
     {
       name: "GitHub",
       handle: "/RAKIB97J",
-      href: "https://github.com/RAKIB97J",
+      href: "https://github.com/rakib97j",
       icon: "fab fa-github",
     },
     {
       name: "LinkedIn",
       handle: "/IN/RAKIB97J",
-      href: "https://linkedin.com/in/RAKIB97J",
+      href: "https://linkedin.com/in/rkib997j",
       icon: "fab fa-linkedin-in",
     },
      {
